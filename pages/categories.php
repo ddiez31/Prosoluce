@@ -3,7 +3,7 @@
     <div class="ui four column grid">
         <div class="row icones">
             <div class="column">
-                <a href="../index.php?page=1"><img type="submit" name="test" src="assets/Edit_s.png" alt="Envoyer une campagne"><br>Envoyer une campagne</a>
+                <a href="pages/under_compose.php"><img src="assets/Edit_s.png" alt="Envoyer une campagne"><br>Envoyer une campagne</a>
             </div>
             <div class="column">
                 <a href="https://ecampaign.prosoluce.fr/m_groupes.php"><img src="assets/Users_s.png" alt="Groupes d&#39;envoi"><br>Groupes d'envoi</a>

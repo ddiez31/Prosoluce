@@ -1,0 +1,1369 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0044)https://ecampaign.prosoluce.fr/m_compose.php -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!-- <script type="text/javascript" src="https://getfirebug.com/firebug-lite.js" ></script> debug="true" -->
+
+	
+	<meta name="description" content="eCampaign">
+	<meta name="keywords" content="eCampaign">
+	<meta name="author" content="PROSOLUCE">
+	<meta name="copyright" content="PROSOLUCE">
+
+	<title>eCampaign :: Communication multicanal :: PROSOLUCE</title>
+
+	<script type="text/javascript" src="./requete_files/overlib_mini.js"></script>
+	<script type="text/javascript" src="./requete_files/jquery.min.js"></script>
+	<script type="text/javascript" src="./requete_files/jquery-migrate-1.2.1.js"></script>
+	<script type="text/javascript" src="./requete_files/jquery.form.js"></script>
+	<script type="text/javascript" src="./requete_files/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="./requete_files/jquery.disableonsubmit.js"></script>
+	<script type="text/javascript" src="./requete_files/fixpng.js"></script>
+	<script type="text/javascript" src="./requete_files/functions.js"></script>
+	<script type="text/javascript" src="./requete_files/alert.js"></script>
+
+	<link rel="shortcut icon" href="https://ecampaign.prosoluce.fr/design/default/imgs/favicon.ico">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="./requete_files/style.css">
+	<link rel="stylesheet" type="text/css" href="./requete_files/jquery-ui.min.css">
+
+
+	<link rel="stylesheet" type="text/css" href="./requete_files/spectrum.css">
+
+	<!-- Classe de gestion des requêtes AJAX -->
+	<script type="text/javascript" src="./requete_files/ajax.js"></script>
+
+	<!-- Je sais plus trop ce que ça fait -->
+	<script type="text/javascript" src="./requete_files/nav.js"></script>
+
+	<!-- CKEditor -->
+	<script type="text/javascript" src="./requete_files/ckeditor.js"></script><style>.cke{visibility:hidden;}</style>
+
+	<!-- Gestion de la création de modèle de mailing -->
+	<script type="text/javascript" src="./requete_files/editor.js"></script>
+
+	<!-- Fichier dynamique fourni par prosoluce pour les variables de publipostage -->
+	<script type="text/javascript" src="./requete_files/publipostage.js"></script>
+
+	<!-- Options des blocs & éléments -->
+	<script type="text/javascript" src="./requete_files/form_type.js"></script>
+
+	<!-- Color picker -->
+	<script type="text/javascript" src="./requete_files/spectrum.js"></script>
+</head>
+<body cz-shortcut-listen="true">
+<h1>eCampaign :: Communication multicanal :: PROSOLUCE</h1>
+
+<div id="overDiv" style="position:absolute; visibility:hidden; z-index:99999; text-align:left;"></div>
+
+<div id="d_site">
+
+<div id="d_menu_top" class="croix"><a href="https://ecampaign.prosoluce.fr/log.php?act=logout">Déconnexion de Dm-simplon</a></div>
+
+	<div id="d_ban_top"><a href="https://ecampaign.prosoluce.fr/index.php"><img src="./requete_files/logo_header.jpg" alt="eCampaign - Communication multicanal"></a></div>
+
+<script type="text/javascript">
+
+
+	$(document).ready(function() {
+		actif = false;
+		$('#tabs_compose').tabs({
+			active: 0,            beforeActivate: function(event, ui) {
+            	if(actif == true) {
+    				if(confirm('Êtes vous vraiment sûr(e) de vouloir abandonner la campagne en cours d\'édition ?')){
+    					actif = false;
+    					return true;
+    				}else{
+    					return false;
+    				}
+            	} else {
+					actif = false;
+					return true;
+            	}
+            },
+		    activate: function(event, ui) {
+		        ui.oldPanel.empty();
+		    },
+            beforeLoad: function(event, ui) {
+                $('#loading_div').show();
+                /* if ajax call to retrieve tab content failed */
+                ui.jqXHR.error(function() {
+                    $('#loading_div').hide();
+                    ui.panel.html("<p>Une erreur interne s'est produite.<br />Merci de bien vouloir nous en excuser.</p>");
+                });
+            },
+            load: function(event, ui) {
+                $('#loading_div').hide();
+            }
+		});
+	});
+</script>
+
+<div id="d_cont">
+	<div class="h2_left"><h2 class="h2_suiv">Envoyer une campagne<span class="h2_right"></span></h2></div>
+	<div id="fil_ariane"><a href="https://ecampaign.prosoluce.fr/m_menu.php"><span>eCampaign</span></a> &gt; <a href="https://ecampaign.prosoluce.fr/m_compose.php">Envoyer une campagne</a></div>
+
+	<div id="bigzone">
+		<div id="cont_compose">
+			<div id="tabs_compose" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
+<ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist"><li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="ui-id-2" aria-labelledby="ui-id-1" aria-selected="true" aria-expanded="true"><a href="https://ecampaign.prosoluce.fr/ajax/send_modules/form.php?type=sms&amp;rand=5922a9286fa7c" title="SMS" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-1"><span>SMS</span></a></li>
+<li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="ui-id-4" aria-labelledby="ui-id-3" aria-selected="false" aria-expanded="false"><a href="https://ecampaign.prosoluce.fr/ajax/send_modules/form.php?type=voice&amp;rand=5922a9286fb35" title="Campagnes d&#39;appels" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-3"><span>Campagnes d'appels</span></a></li>
+<li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="ui-id-6" aria-labelledby="ui-id-5" aria-selected="false" aria-expanded="false"><a href="https://ecampaign.prosoluce.fr/ajax/send_modules/form.php?type=mail&amp;rand=5922a9286fbec" title="E-mail" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-5"><span>E-mail</span></a></li>
+<li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="ui-id-8" aria-labelledby="ui-id-7" aria-selected="false" aria-expanded="false"><a href="https://ecampaign.prosoluce.fr/ajax/send_modules/form.php?type=fax&amp;rand=5922a9286fc9b" title="FAX" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-7"><span>FAX</span></a></li>
+</ul><div id="ui-id-2" class="ui-tabs-panel ui-widget-content ui-corner-bottom" aria-live="polite" aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="false"><script type="text/javascript">
+	var sms_grp_cont_json;
+	var type = 'sms';
+	var possible_values_field;
+
+	$(document).ready(function() {
+
+		/* Formulaire AJAX */
+		$('#compose_frm').ajaxForm({
+			target:			'#cont_compose_sms',
+			beforeSubmit:	function(formData, jqForm, opts){
+								if( confirm('Confirmez-vous l\'envoi de la campagne ?') ){
+									$('#cont_compose_sms').html('<' + 'div style="text-align:left;"><' + 'br /><' + 'br /><' + 'br /><' + 'img src="images/ajax-loader.gif" alt="Chargement..." /> Pr&eacute;paration de la campagne en cours, merci de bien vouloir patienter...<' + '/div>');
+								}
+								else{
+									return false;
+								}
+							}
+		});
+
+		/* Initialisation sélecteur de groupe / envoi manuel */
+		load_group();
+		
+		datepicker_fr();
+
+		$('#planif_date')
+			.datepicker({
+				minDate: 0,
+				onSelect: function(theDate) {
+					$("#dataEnd").datepicker('option', 'minDate', new Date(theDate));
+					$(this).change();
+				}
+			})
+			.change(function(){				/* Si date sélectionnée = date du jour : empêche la sélection d'heures < heure actuelle */
+				selected_date = $('#planif_date').val();
+
+				current_date	= new Date();
+				current_day		= ( current_date.getDate() < 10 ? "0" : "" ) + current_date.getDate();
+				current_month	= ( (current_date.getMonth()+1) < 10 ? "0" : "" ) + (current_date.getMonth()+1);
+				current_year	= current_date.getFullYear();
+				current_date_txt = current_day+'/'+current_month+'/'+current_year;
+
+				if( selected_date == current_date_txt ){
+					$("#planif_heure_h .past").attr('disabled', true);
+				}
+				else{
+					$("#planif_heure_h .past").attr('disabled', false);
+				}				
+			})
+			.change();
+
+		$('#planif_heure_h')
+			.change(function(){				/* Si date sélectionnée = date du jour ET heure sélectionnée = heure actuelle : empêche la sélection de minutes < minutes actuelles */
+				selected_date = $('#planif_date').val();
+	
+				current_date	= new Date();
+				current_day		= ( current_date.getDate() < 10 ? "0" : "" ) + current_date.getDate();
+				current_month	= ( (current_date.getMonth()+1) < 10 ? "0" : "" ) + (current_date.getMonth()+1);
+				current_year	= current_date.getFullYear();
+				current_hour	= current_date.getHours();
+				current_date_txt = current_day+'/'+current_month+'/'+current_year;
+	
+				selected_hour = $("#planif_heure_h").val();
+	
+				if( selected_date == current_date_txt && selected_hour == current_hour ){
+					$("#planif_heure_m .past").attr('disabled', true);
+				}
+				else{
+					$("#planif_heure_m .past").attr('disabled', false);
+				}
+			})
+			.change();
+
+		
+		/* Popup */
+		$('#popupjquery').dialog({
+			autoOpen: false,
+			width: 600,
+			buttons: { "Fermer": function() { $(this).dialog("close"); } }
+		});
+
+		/* Empêche que l'on appuie sur la touche Entrer */
+		$('.no_submit').live('keypress', function(e){
+			if(e.keyCode == 13){
+				return false;
+			}
+		});
+	});
+
+
+
+	/* Changement d'étape */
+	function goto_step(cur, next){
+		type_envoi = ($('#groupe_cible').val() == 'manual'?2:1);
+
+		/* Etape 1 vers 2 */
+		if(cur == 1 && next == 2){
+			if(type_envoi == 1){	/* Groupe d'envoi */
+				if($('#filtrage_actif:checked').val() == 1){	/* Si filtrage demandé */
+					$('#etape_destinataires').slideUp();
+					$('#etape_filtrage').slideDown();
+				}
+				else{
+					$('#etape_destinataires').slideUp();
+					$('#etape_redaction').slideDown();
+				}
+			}
+			if(type_envoi == 2){	/* Envoi simple */
+				/* Vérification des numéros saisis */
+				var err = new Array();
+				var chp_val = '';
+				var chp_epure = '';
+				var nb_valid_dest = 0;
+
+				/* Vérifie les numéros */
+				$('.dest_manu_champ_tel').each(function(){
+					chp_val		= $(this).val();
+					chp_epure	= chp_val.replace(/\ |,|-|\/|\.|;/g, '');
+					$(this).val(chp_epure);
+
+					if(!isNumeric(chp_epure) && chp_val != ''){
+						err.push('Le num&eacute;ro de t&eacute;l&eacute;phone \'' + chp_epure + '\' est invalide.');
+					}
+					else if(chp_val != ''){
+						nb_valid_dest++;
+					}
+				});
+
+				/* Vérifie les mails */
+				$('.dest_manu_champ_mail').each(function(){
+					chp_val		= $(this).val();
+
+					if(!check_mail(chp_val) && chp_val != ''){
+						err.push('L\'adresse e-mail \'' + chp_val + '\' est invalide.');
+					}
+					else if(chp_val != ''){
+						nb_valid_dest++;
+					}
+				});
+
+				if(nb_valid_dest == 0)
+					err.push('Vous devez saisir au moins un destinataire.');
+
+				if(err.length > 0){
+					alertajax(err[0], 5000, false);
+					return false;
+				}
+
+				$('#etape_destinataires').slideUp();
+				$('#etape_redaction').slideDown();
+			}
+			actif = true;
+		}
+
+		/* Etape 2 vers 3 */
+		if(cur == 2 && next == 3){
+			/* Si le filtrage est actif */
+			if($('#filtrage_actif:checked').val() == 1){
+				grp_id				= $('#groupe_cible').val();
+				nb_crit_filtrage	= i_filtrage_critere_cur;
+				params_criteres		= '';
+
+				for(i=0; i<nb_crit_filtrage; i++){
+					params_criteres += '&champ[' + i + ']=' + encodeURIComponent($('#filtre_champ_' + i).val());
+					params_criteres += '&oper[' + i + ']=' + encodeURIComponent($('#filtre_operateur_' + i).val());
+					params_criteres += '&val[' + i + ']=' + encodeURIComponent($('#filtre_valeur_' + i).val());
+				}
+
+				nb_membres_after_filtrage = $.ajax({url: 'ajax/send_modules/compose_grp_filtrage_result.php?rand=5922a928d3493&id=' + grp_id + '&countonly=1&global_oper=' + $("input[name='filtre_multi_operateur']").val() + params_criteres, async: false}).responseText;
+
+				if(nb_membres_after_filtrage == 0){
+					alertajax('Aucun contact ne correspond &agrave; vos crit&egrave;res de filtrage, merci de modifier votre recherche avant de continuer.', 5000, false);
+					return false;
+				}
+
+				/* SMS : Met à jour l'échantillon de données groupe */
+				if(type == 'sms'){
+					sms_grp_cont_json = JSON.parse( $.ajax({url: 'ajax/send_modules/compose_sms_get_sample_grp_data.php?rand=5922a928d34d9&group_id=' + grp_id + '&global_oper=' +  $("input[name='filtre_multi_operateur']").val() + params_criteres, async: false}).responseText );
+					maj_textarea();
+				}
+
+			}
+
+			$('#etape_filtrage').slideUp();
+			$('#etape_redaction').slideDown();
+		}
+
+		/* Etape 2 vers 1 */
+		if(cur == 2 && next == 1){
+			$('#etape_filtrage').slideUp();
+			$('#etape_destinataires').slideDown();
+		}
+
+		/* Etape 3 vers 2 */
+		if(cur == 3 && next == 2){
+			if(type_envoi == 1){	/* Groupe d'envoi */
+				if($('#filtrage_actif:checked').val() == 1){	/* Si filtrage demandé */
+					$('#etape_redaction').slideUp();
+					$('#etape_filtrage').slideDown();
+				}
+				else{
+					$('#etape_redaction').slideUp();
+					$('#etape_destinataires').slideDown();
+				}
+			}
+			if(type_envoi == 2){	/* Envoi simple */
+				$('#etape_redaction').slideUp();
+				$('#etape_destinataires').slideDown();
+			}
+		}
+
+		/* Etape 3 vers 4 */
+		if(cur == 3 && next == 4){
+			// SMS
+			if(type == 'sms'){
+				// Vérifie le message
+				if( $('#msg').val() == '' || $('#msg').val() == 'Rédigez votre message ici' ){
+					alertajax('Aucun message n\'a &eacute;t&eacute; saisi.', 5000, false);
+					return false;
+				}
+			}
+
+			// E-mail
+			if(type == 'mail'){
+				if( $('input:radio[name=source_msg_mail]:checked').val() == 'redac' ){
+				    CKEDITOR.instances["msg_mail"].updateElement();
+					// Objet
+					if($('input[name=msg_mail_subject]').val() == ''){
+						alertajax('Aucun objet n\'a &eacute;t&eacute; saisi.', 5000, false);
+						return false;
+					}
+					// Message
+					// A défaut de pouvoir comparer correctement une chaine multiligne en JS on utilise le nombre de caracteres
+					if($('#msg_mail').val() == '' || $('#msg_mail').val().length == 110){
+						alertajax('Aucun message n\'a &eacute;t&eacute; saisi.', 5000, false);
+						return false;
+					}
+				}
+			}
+
+			$('#etape_redaction').slideUp();
+			$('#etape_parametres').slideDown();
+		}
+
+		/* Etape 4 vers 3 */
+		if(cur == 4 && next == 3){
+			$('#etape_parametres').slideUp();
+			$('#etape_redaction').slideDown();
+		}
+	}
+
+	/* Charge les informations relatives à un groupe */
+	var select_options_tags_group = '';
+	function load_group(){
+		valeur = $('#groupe_cible').val();
+
+		/* Sélection invalide ----------- */
+		if(valeur == 'nok'){
+			/* Ne fait rien */
+		}
+		
+		/* Saisie manuelle -------------- */
+		else if(valeur == 'manual'){			
+			$('#bt_visu_grp').hide();
+				
+			$('#select_manuel').slideDown('normal');
+			$('#applyfilter').slideUp('normal');
+			
+			$('#liste_tags').html('');
+			$('#select_group_tag').html('');
+			$('#bt_to_step2').prop('disabled',false);
+
+			/* Avertissement portant sur la longueur des champs dynamiques */
+			$('#warn_len_tags').hide();
+
+			/* SMS : Echantillon de données groupe: il n'y en a pas */
+			if(type == 'sms'){
+				sms_grp_cont_json = JSON.parse( '{}' );
+				$('#phone_sms_preview .prev').hide();
+				$('#phone_sms_preview .next').hide();
+
+				setTimeout(function(){
+					maj_textarea();
+				}, 1000);
+			}
+		}
+
+		/* Groupe d'envoi --------------- */
+		else{					
+			/*$('#select_group_tag').html('<br ></nb_crit_filtrage><' + 'img src="images/ajax-loader.gif" alt="Chargement..." /> Chargement...');*/
+			$('#select_group_tag').html('');
+						
+			$('#bt_visu_grp').show();
+			
+			$('#select_manuel').slideUp();
+			$('#applyfilter').slideDown('normal');
+			
+			$('#liste_tags').html('');
+	
+			/* Avertissement portant sur la longueur des champs dynamiques */
+			$('#warn_len_tags').show();
+
+			/* Champs utilisables */
+						$('#select_group_tag').load('ajax/send_modules/compose_grp_select_tags_dest.php?rand=5922a928d364a&types_tags[]=fixe&types_tags[]=mobile&id=' + valeur);
+
+			/* Mise à jour du comptage des destinataires */
+			visu_group_content(true);
+			
+			/* Affiche les tags à côté de la fenêtre d'édition */
+			$('#liste_tags').load('ajax/send_modules/compose_grp_add_tags.php?dropdown=1&rand=5922a928d3690&id=' + valeur);
+
+			/* Récupère le contenu du select avec la liste des tags du groupe */
+			select_options_tags_group = $.ajax({url: 'ajax/send_modules/compose_grp_get_all_tags.php?rand=5922a928d36d4&act=html&id=' + valeur, async: false}).responseText;
+
+			/* Présélections de valeurs pour le filtrage */
+			possible_values_field = JSON.parse( $.ajax({url: 'ajax/send_modules/compose_grp_possible-values-field.php?rand=5922a928d3718&group_id=' + grp_id, async: false}).responseText );
+
+			/* Ajoute la première ligne de filtrage */
+			if( i_filtrage_critere_cur < 1 ){
+				add_filtrage_critere();
+			}
+
+			/* Refresh toutes les présélections des champs de filtrage */
+			for(i=0; i<=i_filtrage_critere_cur; i++){
+				
+				if( $('#filtre_champ_' + i).val() === undefined ){
+					continue;
+				}
+				
+				filtre_change_tag(i, $('#filtre_champ_'+i).val(), 0 );
+				
+			}
+			
+			
+			/* SMS : Récupère un échantillon de données groupe */
+			if(type == 'sms'){
+				sms_grp_cont_json = JSON.parse( $.ajax({url: 'ajax/send_modules/compose_sms_get_sample_grp_data.php?rand=5922a928d375c&group_id=' + valeur, async: false}).responseText );
+				$('#phone_sms_preview .prev').show();
+				$('#phone_sms_preview .next').show();
+				
+				setTimeout(function(){
+					maj_textarea();
+				}, 1000);
+			}
+
+			i = 0;
+			while (true) {
+				element = $('#filtre_champ_' + i);
+				if ( element.length ) {
+					element.html(select_options_tags_group);
+				} else {
+					break;
+				}
+				i++;
+			}
+		}
+
+	}
+
+	/* Vérification des champs */
+	function check_form(formulaire){
+		message = 	formulaire.msg.value;
+		envoi = 		formulaire.envoi.value;	/* Type d'envoi : simple/campagne */
+
+		numvalide = new RegExp(/^[1-9]\d{5,20}$/);
+
+		/* Message non rempli */
+		if(message == ''){
+			alert('Vous devez obligatoirement insérer un message.');
+			return false;
+		}
+
+		return true;
+	}
+
+	/* Ajout d'un champ numéro de téléphone pour la sélection manuelle dest */
+	var i_champ_dest_cur = 1;
+	function add_champ_dest_manu(type){
+		id_div = '#num_manu_' + (i_champ_dest_cur - 1);
+
+		del_bt = '<span><a href="#" onclick="del_champ_dest_manu(' + i_champ_dest_cur + '); nd(); return false;" onmouseover="return overlib(\'Supprimer ce destinataire\');" onmouseout="return nd();"><img src="images/icons/delete.png" alt="Supprimer" /></a></span>';
+
+		if(type != 'mail'){
+			champ_html = '<div class="num_manu" id="num_manu_' + i_champ_dest_cur + '"><select name="dest_indic[]" class="champ_flat"><option value=\"1\">+1</option><option value=\"20\">+20</option><option value=\"212\">+212</option><option value=\"213\">+213</option><option value=\"216\">+216</option><option value=\"218\">+218</option><option value=\"220\">+220</option><option value=\"221\">+221</option><option value=\"222\">+222</option><option value=\"223\">+223</option><option value=\"224\">+224</option><option value=\"225\">+225</option><option value=\"226\">+226</option><option value=\"227\">+227</option><option value=\"228\">+228</option><option value=\"229\">+229</option><option value=\"230\">+230</option><option value=\"231\">+231</option><option value=\"232\">+232</option><option value=\"233\">+233</option><option value=\"234\">+234</option><option value=\"235\">+235</option><option value=\"236\">+236</option><option value=\"237\">+237</option><option value=\"238\">+238</option><option value=\"239\">+239</option><option value=\"240\">+240</option><option value=\"241\">+241</option><option value=\"242\">+242</option><option value=\"243\">+243</option><option value=\"244\">+244</option><option value=\"245\">+245</option><option value=\"246\">+246</option><option value=\"247\">+247</option><option value=\"248\">+248</option><option value=\"249\">+249</option><option value=\"250\">+250</option><option value=\"251\">+251</option><option value=\"252\">+252</option><option value=\"253\">+253</option><option value=\"254\">+254</option><option value=\"255\">+255</option><option value=\"256\">+256</option><option value=\"257\">+257</option><option value=\"258\">+258</option><option value=\"261\">+261</option><option value=\"262\">+262</option><option value=\"264\">+264</option><option value=\"265\">+265</option><option value=\"266\">+266</option><option value=\"267\">+267</option><option value=\"268\">+268</option><option value=\"269\">+269</option><option value=\"27\">+27</option><option value=\"290\">+290</option><option value=\"291\">+291</option><option value=\"297\">+297</option><option value=\"298\">+298</option><option value=\"299\">+299</option><option value=\"30\">+30</option><option value=\"31\">+31</option><option value=\"32\">+32</option><option value=\"33\" selected=\"selected\">+33</option><option value=\"34\">+34</option><option value=\"350\">+350</option><option value=\"351\">+351</option><option value=\"352\">+352</option><option value=\"353\">+353</option><option value=\"354\">+354</option><option value=\"355\">+355</option><option value=\"356\">+356</option><option value=\"357\">+357</option><option value=\"358\">+358</option><option value=\"359\">+359</option><option value=\"36\">+36</option><option value=\"370\">+370</option><option value=\"371\">+371</option><option value=\"372\">+372</option><option value=\"373\">+373</option><option value=\"374\">+374</option><option value=\"375\">+375</option><option value=\"376\">+376</option><option value=\"377\">+377</option><option value=\"378\">+378</option><option value=\"379\">+379</option><option value=\"380\">+380</option><option value=\"381\">+381</option><option value=\"385\">+385</option><option value=\"386\">+386</option><option value=\"387\">+387</option><option value=\"389\">+389</option><option value=\"39\">+39</option><option value=\"40\">+40</option><option value=\"41\">+41</option><option value=\"420\">+420</option><option value=\"421\">+421</option><option value=\"423\">+423</option><option value=\"43\">+43</option><option value=\"44\">+44</option><option value=\"45\">+45</option><option value=\"46\">+46</option><option value=\"47\">+47</option><option value=\"48\">+48</option><option value=\"49\">+49</option><option value=\"500\">+500</option><option value=\"501\">+501</option><option value=\"502\">+502</option><option value=\"503\">+503</option><option value=\"504\">+504</option><option value=\"505\">+505</option><option value=\"506\">+506</option><option value=\"507\">+507</option><option value=\"508\">+508</option><option value=\"509\">+509</option><option value=\"51\">+51</option><option value=\"52\">+52</option><option value=\"53\">+53</option><option value=\"54\">+54</option><option value=\"55\">+55</option><option value=\"56\">+56</option><option value=\"57\">+57</option><option value=\"58\">+58</option><option value=\"590\">+590</option><option value=\"591\">+591</option><option value=\"592\">+592</option><option value=\"593\">+593</option><option value=\"594\">+594</option><option value=\"595\">+595</option><option value=\"596\">+596</option><option value=\"597\">+597</option><option value=\"598\">+598</option><option value=\"599\">+599</option><option value=\"60\">+60</option><option value=\"61\">+61</option><option value=\"62\">+62</option><option value=\"63\">+63</option><option value=\"64\">+64</option><option value=\"65\">+65</option><option value=\"66\">+66</option><option value=\"670\">+670</option><option value=\"672\">+672</option><option value=\"673\">+673</option><option value=\"674\">+674</option><option value=\"675\">+675</option><option value=\"676\">+676</option><option value=\"677\">+677</option><option value=\"678\">+678</option><option value=\"679\">+679</option><option value=\"680\">+680</option><option value=\"681\">+681</option><option value=\"682\">+682</option><option value=\"683\">+683</option><option value=\"685\">+685</option><option value=\"686\">+686</option><option value=\"687\">+687</option><option value=\"688\">+688</option><option value=\"689\">+689</option><option value=\"690\">+690</option><option value=\"691\">+691</option><option value=\"692\">+692</option><option value=\"7\">+7</option><option value=\"81\">+81</option><option value=\"82\">+82</option><option value=\"84\">+84</option><option value=\"850\">+850</option><option value=\"852\">+852</option><option value=\"853\">+853</option><option value=\"855\">+855</option><option value=\"856\">+856</option><option value=\"86\">+86</option><option value=\"880\">+880</option><option value=\"90\">+90</option><option value=\"91\">+91</option><option value=\"92\">+92</option><option value=\"93\">+93</option><option value=\"94\">+94</option><option value=\"95\">+95</option><option value=\"960\">+960</option><option value=\"961\">+961</option><option value=\"962\">+962</option><option value=\"963\">+963</option><option value=\"964\">+964</option><option value=\"965\">+965</option><option value=\"966\">+966</option><option value=\"967\">+967</option><option value=\"968\">+968</option><option value=\"971\">+971</option><option value=\"972\">+972</option><option value=\"973\">+973</option><option value=\"974\">+974</option><option value=\"975\">+975</option><option value=\"976\">+976</option><option value=\"977\">+977</option><option value=\"98\">+98</option><option value=\"992\">+992</option><option value=\"993\">+993</option><option value=\"994\">+994</option><option value=\"995\">+995</option><option value=\"996\">+996</option><option value=\"998\">+998</option></select><input type="text" name="dest_num[]" class="champ_flat dest_manu_champ_tel no_submit" id="num_tel" /> ' + del_bt + '</div>';
+		}else{
+			champ_html = '<div class="num_manu" id="num_manu_' + i_champ_dest_cur + '"><input type="text" name="dest_num[]" class="champ_flat dest_manu_champ_mail no_submit" id="num_tel" style=\"width:310px;\" /> ' + del_bt + '</div>';
+		}
+
+		/*$(champ_html).insertAfter(id_div);*/
+		$(champ_html).insertAfter( $('.num_manu').last() );
+
+		i_champ_dest_cur++;
+	}
+
+	function del_champ_dest_manu(div_i){
+		$('#num_manu_' + div_i).remove();
+
+		if( div_i == (i_champ_dest_cur - 1) && i_champ_dest_cur > 1 ){
+			i_champ_dest_cur--;
+		}
+	}
+
+
+	/* FILTRAGE ============================================================== */
+
+	/* Ajout d'un critère de filtrage */
+	var i_filtrage_critere_cur = 0;
+	function add_filtrage_critere(){
+		id_tr = '#filtre_critere_' + (i_filtrage_critere_cur - 1);
+
+		global_multi_ope = $('.filtre_multi_operateur').first().val();
+		
+		champ_html = '<tr id="filtre_critere_' + i_filtrage_critere_cur + '" class="filtre_critere"> '+
+					'	<td> ';
+
+		if( i_filtrage_critere_cur == 0 ){		// Première ligne
+			champ_html = champ_html +
+					'		<input type="hidden" name="filtre_multi_operateur" value="OR" />';
+		}
+		else{				// Lignes suivantes
+			champ_html = champ_html +
+					'		<select name="filtre_multi_operateur_fake_' + i_filtrage_critere_cur + '" class="champ filtre_multi_operateur" onchange="filtre_multi_change_operateur(' + i_filtrage_critere_cur + ',this.options[this.selectedIndex].value)"> '+
+					'			<option value="OR"' + (global_multi_ope == 'OR'?' selected="selected"':'') + '>OU</option> '+
+					'			<option value="AND"' + (global_multi_ope == 'AND'?' selected="selected"':'') + '>ET</option> '+
+					'		</select> ';
+		}
+
+		champ_html = champ_html + 
+					'	</td> '+
+					'	<td><select name="filtre_champ[]" id="filtre_champ_' + i_filtrage_critere_cur + '" class="champ" onchange="filtre_change_tag(' + i_filtrage_critere_cur + ',this.options[this.selectedIndex].value, 0);">' + select_options_tags_group + '</select></td> '+
+					'	<td> '+
+					'		<select name="filtre_operateur[]" id="filtre_operateur_' + i_filtrage_critere_cur + '" class="champ" onchange="filtre_change_operateur(' + i_filtrage_critere_cur + ',this.options[this.selectedIndex].value);"> '+			
+					'			<option value="LIKE" class="filter_search_all filter_search_csv">Contient</option> '+
+					'			<option value="NOTLIKE" class="filter_search_all filter_search_csv">Ne contient pas</option> '+
+					'			<option value="=" class="filter_search_all filter_search_assist">Est</option> '+
+					'			<option value="!=" class="filter_search_all filter_search_assist">N\'est pas</option> '+
+					'			<option value="BEGIN" class="filter_search_all">Commence par</option> '+
+					'			<option value="END" class="filter_search_all">Finit par</option> '+
+					'		</select> '+
+					'	</td> '+
+					'	<td id="filter_td_val_' + i_filtrage_critere_cur + '"></td> '+
+					'	<td style="text-align:center;">';
+
+		if( i_filtrage_critere_cur == 0 ){		// Première ligne
+			champ_html = champ_html + '&nbsp;';
+		}
+		else{									// Lignes suivantes
+			champ_html = champ_html + '<a href="#" onclick="del_filtrage_critere(' + i_filtrage_critere_cur + '); nd(); this.blur(); return false;" onmouseover="return overlib(\'Supprimer ce critère\');" onmouseout="return nd();"><img src="images/icons/delete.png" alt="Supprimer ce critère" /></a>';
+		}
+
+		champ_html = champ_html + 
+					'   </td> '+
+					'</tr>';
+
+		if( $('.filtre_critere').last().length != 0 ){
+			$(champ_html).insertAfter( $('.filtre_critere').last() );
+		}
+		else{
+			$(champ_html).insertAfter( $('.header').last() );
+		}
+
+		/* Refresh le champ tag */
+		filtre_change_tag(i_filtrage_critere_cur, $('#filtre_champ_'+i_filtrage_critere_cur).val(), 0 );
+		
+		i_filtrage_critere_cur++;
+	}
+
+	/* Supprime un critère de filtrage */
+	function del_filtrage_critere(id){
+		$('#filtre_critere_'+id).remove();
+	}
+
+	/* Changement de l'opérateur de filtrage global (ET / OU) */
+	function filtre_multi_change_operateur(id_filtre, valeur){
+		$('.filtre_multi_operateur').each(function() {
+			$(this).val(valeur);
+		});
+
+		$("input[name='filtre_multi_operateur']").val(valeur);
+	}
+
+	/* Fonction appellee lorsque un operateur de filtrage change */
+	function filtre_change_operateur(id_filtre, valeur){
+		if(valeur == 'NOTNULL' || valeur == 'NULL' || valeur == 'NOFILTER'){
+			$('#filtre_valeur_' + id_filtre).prop('disabled', true);
+		}
+		else{
+			$('#filtre_valeur_' + id_filtre).prop('disabled', false);
+		}
+	}
+	
+	/* Fonction appelée lorsqu'un tag change */
+	function filtre_change_tag(id_filtre, tag_name, force_input){
+
+		// Cache toutes les propositions
+		$('#filtre_critere_'+id_filtre+' .filter_search_all').hide();
+		
+		tag_infos = possible_values_field[tag_name];
+		
+		html = '';
+		
+		// Si des propositions sont disponibles
+		if( tag_infos !== undefined && force_input != 1 ){
+			
+			tag_values = tag_infos.vals;
+			tag_type = tag_infos.type;
+
+			html = html + '<select name="filtre_valeur[]" id="filtre_valeur_' + id_filtre + '" class="champ no_submit filtre_valeur"' + (tag_type == 'custom' || tag_type == 'csv'?' style="width:calc(100% - 20px);"':'') + '>';
+			$.each(tag_values, function(index, cur_tag_name) {
+				html = html + '<option value="' + cur_tag_name + '">' + cur_tag_name + '</option>';
+			});
+			html = html + '</select>';
+
+			// Mode assisté
+			if( tag_type == 'custom' ){
+				$('#filtre_critere_'+id_filtre+' .filter_search_assist').show();
+			}
+
+			// Mode liste prédéfinie CSV
+			if( tag_type == 'csv' ){
+				$('#filtre_critere_'+id_filtre+' .filter_search_csv').show();
+			}
+
+			// Mode assisté ou CSV
+			if( tag_type == 'custom' || tag_type == 'csv' ){
+				html = html + '&nbsp;<a href="#" onclick="filtre_change_tag(' + id_filtre + ', \'' + tag_name + '\', 1); nd(); this.blur(); return false;" onmouseover="return overlib(\'Passer en saisir manuelle\');" onmouseout="return nd();"><img src="images/icons/pencil.png" alt="Passer en saisir manuelle" /></a>';
+			}
+			
+		}
+		
+		// Si aucune proposition n'est disponible
+		else{
+			
+			html = html + '<input type="text" name="filtre_valeur[]" id="filtre_valeur_' + id_filtre + '" class="champ no_submit filtre_valeur"' + (force_input == 1?' style="width:calc(100% - 20px);"':'') + ' />';
+
+			// Force le champ texte brut (custom)
+			if( force_input == 1 ){
+				html = html + '&nbsp;<a href="#" onclick="filtre_change_tag(' + id_filtre + ', \'' + tag_name + '\', 0); nd(); this.blur(); return false;" onmouseover="return overlib(\'Passer en saisie assistée\');" onmouseout="return nd();"><img src="images/icons/wand.png" alt="Passer en saisie assistée" /></a>';
+			}
+
+			// Affiche tous les opérateurs
+			$('#filtre_critere_'+id_filtre+' .filter_search_all').show();
+			
+		}
+
+		// Reset le type de filtrage (l'ancien dispo n'existe peut être plus)
+		//$('#filtre_operateur_' + id_filtre).val($('#filtre_operateur_' + id_filtre + ' option:visible:first').val());		// Visible : fonctionne uniquement si le filtrage entier est visible
+		$('#filtre_operateur_' + id_filtre).val(   $('#filtre_operateur_' + id_filtre + ' option[style*=\'display: block\']:first').val()  );
+
+		// Change le champ de saisie du critère
+		$('#filter_td_val_'+id_filtre).html(html);
+		
+	}
+	
+
+	/* Visualisation contenu groupe */
+	function visu_group_content(onlycount){
+		onlycount = onlycount || false;
+		grp_id = $('#groupe_cible').val();
+		params_criteres	= '';
+
+        $.each($("input[name='groupe_cible_champ']:checked"), function(){
+            params_criteres += '&dest_tag[]=' + encodeURIComponent($(this).val());
+        });
+
+        /* Affichage de la popup JS avec le contenu du groupe */
+		if( onlycount === false){
+			$('#popupjquery > .content').html('<' + 'div style="text-align:left;"><' + 'img src="images/ajax-loader.gif" alt="Chargement..." /> Chargement...</' + 'div>');
+			$('#popupjquery > .content').load('ajax/send_modules/compose_grp_filtrage_result.php?rand=5922a928d397e&id=' + grp_id + '&global_oper=OR' + params_criteres);
+			$('#popupjquery').dialog('open');
+		}
+
+		/* Affiche le nombre de destinataires présents dans le groupe */
+		else{
+			grp_member_count = $.ajax({url: 'ajax/send_modules/compose_grp_filtrage_result.php?rand=5922a928d39c3&countonly=1&id=' + grp_id + '&global_oper=OR' + params_criteres, async: false}).responseText;
+
+			/* Désactive le bouton "suivant" si 0 dest */
+			if( grp_member_count > 0 ){
+				$('#bt_to_step2').prop('disabled',false);
+			}else{
+				$('#bt_to_step2').prop('disabled',true);
+			}
+
+			/* Renseigne le nombre sur la page */
+			if( grp_member_count > 0 ){
+				grp_member_count = grp_member_count.replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+				pluriel = (grp_member_count > 1?'s':'');
+				aff = grp_member_count + ' destinataire' + pluriel;
+			}
+			else{
+				aff = 'Aucun destinataire';
+			}
+			
+			$('#grp_nb_dest').html(aff);
+		}
+	}
+
+	/* Visualisation des membres filtrés */
+	function visu_filtrage(onlycount){
+		onlycount = onlycount || false;
+		grp_id				= $('#groupe_cible').val();
+		nb_crit_filtrage	= i_filtrage_critere_cur;
+		global_oper			= $("input[name='filtre_multi_operateur']").val();
+		params_criteres		= '';
+
+		/* Différents critères de filtrage */
+		for(i=0; i<nb_crit_filtrage; i++){
+			
+			if( $('#filtre_champ_' + i).val() === undefined ){
+				continue;
+			}
+			
+			params_criteres += '&champ[' + i + ']=' + encodeURIComponent($('#filtre_champ_' + i).val());
+			params_criteres += '&oper[' + i + ']=' + encodeURIComponent($('#filtre_operateur_' + i).val());
+			params_criteres += '&val[' + i + ']=' + encodeURIComponent($('#filtre_valeur_' + i).val());
+			
+		}
+
+		/* Champs de destination pour la campagne */
+        $.each($("input[name='groupe_cible_champ']:checked"), function(){
+            params_criteres += '&dest_tag[]=' + encodeURIComponent($(this).val());
+        });
+
+        /* Affichage de la popup JS avec le résultat du filtrage */
+		if( onlycount === false){
+			$('#popupjquery > .content').html('<' + 'div style="text-align:left;"><' + 'img src="images/ajax-loader.gif" alt="Chargement..." /> Chargement...</' + 'div>');
+			$('#popupjquery > .content').load('ajax/send_modules/compose_grp_filtrage_result.php?rand=5922a928d3a08&id=' + grp_id + '&global_oper=' + global_oper + params_criteres);
+			$('#popupjquery').dialog('open');
+		}
+		
+		/* Affiche le nombre de destinataires correspondant au filtrage */
+		else{
+			// TODO
+		}
+	}
+
+
+	
+</script>
+
+<div id="cont_compose_sms">
+	<form action="https://ecampaign.prosoluce.fr/ajax/send_modules/send.php?rand=5922a928d3a4c&amp;canal=sms" method="post" id="compose_frm" name="compose">
+	
+		<!-- == DESTINATAIRES ============================================================= -->
+		<div id="etape_destinataires">
+			<h3>Sélection des destinataires</h3>			
+
+			<strong>Cible de votre envoi :</strong><br>
+			<p><select name="groupe_cible" id="groupe_cible" onchange="load_group(); this.blur();" class="champ" style="width: 310px;">
+				<optgroup label="Envoi simple">
+<option value="manual" selected="selected">Saisie manuelle des destinataires</option>
+</optgroup>
+<optgroup label=" ">
+</optgroup>
+<optgroup label="Envoi vers un groupe">
+<option value="nok" disabled="true">Aucun groupe d'envoi n'est exploitable pour ce canal</option>
+</optgroup>
+			</select>
+			&nbsp;<a id="bt_visu_grp" style="display:none;" href="https://ecampaign.prosoluce.fr/m_compose.php#" onclick="nd(); this.blur(); visu_group_content(); return false;" onmouseover="return overlib(&#39;Afficher le contenu du groupe&#39;);" onmouseout="return nd();"><img src="./requete_files/magnifier.png" alt="Afficher le contenu du groupe"> <span id="grp_nb_dest">Visualiser</span></a></p>
+			<div id="select_group_tag"></div>
+				
+			<div id="applyfilter" style="display: none;">
+				<br>
+				<strong>Sélectionner seulement certains destinataires :</strong><br>
+				<p><input type="checkbox" class="checkbox" name="filtrage_actif" id="filtrage_actif" value="1"><label for="filtrage_actif">Effectuer un filtrage à l'étape suivante</label></p>
+			</div>
+			
+			
+			<div id="select_manuel" style="min-width: 310px;">
+				<div class="num_manu" id="num_manu_0"><strong>Numéro de téléphone :</strong><br><select name="dest_indic[]" class="champ_flat no_submit"><option value="1">+1</option>
+<option value="20">+20</option>
+<option value="212">+212</option>
+<option value="213">+213</option>
+<option value="216">+216</option>
+<option value="218">+218</option>
+<option value="220">+220</option>
+<option value="221">+221</option>
+<option value="222">+222</option>
+<option value="223">+223</option>
+<option value="224">+224</option>
+<option value="225">+225</option>
+<option value="226">+226</option>
+<option value="227">+227</option>
+<option value="228">+228</option>
+<option value="229">+229</option>
+<option value="230">+230</option>
+<option value="231">+231</option>
+<option value="232">+232</option>
+<option value="233">+233</option>
+<option value="234">+234</option>
+<option value="235">+235</option>
+<option value="236">+236</option>
+<option value="237">+237</option>
+<option value="238">+238</option>
+<option value="239">+239</option>
+<option value="240">+240</option>
+<option value="241">+241</option>
+<option value="242">+242</option>
+<option value="243">+243</option>
+<option value="244">+244</option>
+<option value="245">+245</option>
+<option value="246">+246</option>
+<option value="247">+247</option>
+<option value="248">+248</option>
+<option value="249">+249</option>
+<option value="250">+250</option>
+<option value="251">+251</option>
+<option value="252">+252</option>
+<option value="253">+253</option>
+<option value="254">+254</option>
+<option value="255">+255</option>
+<option value="256">+256</option>
+<option value="257">+257</option>
+<option value="258">+258</option>
+<option value="261">+261</option>
+<option value="262">+262</option>
+<option value="264">+264</option>
+<option value="265">+265</option>
+<option value="266">+266</option>
+<option value="267">+267</option>
+<option value="268">+268</option>
+<option value="269">+269</option>
+<option value="27">+27</option>
+<option value="290">+290</option>
+<option value="291">+291</option>
+<option value="297">+297</option>
+<option value="298">+298</option>
+<option value="299">+299</option>
+<option value="30">+30</option>
+<option value="31">+31</option>
+<option value="32">+32</option>
+<option value="33" selected="selected">+33</option>
+<option value="34">+34</option>
+<option value="350">+350</option>
+<option value="351">+351</option>
+<option value="352">+352</option>
+<option value="353">+353</option>
+<option value="354">+354</option>
+<option value="355">+355</option>
+<option value="356">+356</option>
+<option value="357">+357</option>
+<option value="358">+358</option>
+<option value="359">+359</option>
+<option value="36">+36</option>
+<option value="370">+370</option>
+<option value="371">+371</option>
+<option value="372">+372</option>
+<option value="373">+373</option>
+<option value="374">+374</option>
+<option value="375">+375</option>
+<option value="376">+376</option>
+<option value="377">+377</option>
+<option value="378">+378</option>
+<option value="379">+379</option>
+<option value="380">+380</option>
+<option value="381">+381</option>
+<option value="385">+385</option>
+<option value="386">+386</option>
+<option value="387">+387</option>
+<option value="389">+389</option>
+<option value="39">+39</option>
+<option value="40">+40</option>
+<option value="41">+41</option>
+<option value="420">+420</option>
+<option value="421">+421</option>
+<option value="423">+423</option>
+<option value="43">+43</option>
+<option value="44">+44</option>
+<option value="45">+45</option>
+<option value="46">+46</option>
+<option value="47">+47</option>
+<option value="48">+48</option>
+<option value="49">+49</option>
+<option value="500">+500</option>
+<option value="501">+501</option>
+<option value="502">+502</option>
+<option value="503">+503</option>
+<option value="504">+504</option>
+<option value="505">+505</option>
+<option value="506">+506</option>
+<option value="507">+507</option>
+<option value="508">+508</option>
+<option value="509">+509</option>
+<option value="51">+51</option>
+<option value="52">+52</option>
+<option value="53">+53</option>
+<option value="54">+54</option>
+<option value="55">+55</option>
+<option value="56">+56</option>
+<option value="57">+57</option>
+<option value="58">+58</option>
+<option value="590">+590</option>
+<option value="591">+591</option>
+<option value="592">+592</option>
+<option value="593">+593</option>
+<option value="594">+594</option>
+<option value="595">+595</option>
+<option value="596">+596</option>
+<option value="597">+597</option>
+<option value="598">+598</option>
+<option value="599">+599</option>
+<option value="60">+60</option>
+<option value="61">+61</option>
+<option value="62">+62</option>
+<option value="63">+63</option>
+<option value="64">+64</option>
+<option value="65">+65</option>
+<option value="66">+66</option>
+<option value="670">+670</option>
+<option value="672">+672</option>
+<option value="673">+673</option>
+<option value="674">+674</option>
+<option value="675">+675</option>
+<option value="676">+676</option>
+<option value="677">+677</option>
+<option value="678">+678</option>
+<option value="679">+679</option>
+<option value="680">+680</option>
+<option value="681">+681</option>
+<option value="682">+682</option>
+<option value="683">+683</option>
+<option value="685">+685</option>
+<option value="686">+686</option>
+<option value="687">+687</option>
+<option value="688">+688</option>
+<option value="689">+689</option>
+<option value="690">+690</option>
+<option value="691">+691</option>
+<option value="692">+692</option>
+<option value="7">+7</option>
+<option value="81">+81</option>
+<option value="82">+82</option>
+<option value="84">+84</option>
+<option value="850">+850</option>
+<option value="852">+852</option>
+<option value="853">+853</option>
+<option value="855">+855</option>
+<option value="856">+856</option>
+<option value="86">+86</option>
+<option value="880">+880</option>
+<option value="90">+90</option>
+<option value="91">+91</option>
+<option value="92">+92</option>
+<option value="93">+93</option>
+<option value="94">+94</option>
+<option value="95">+95</option>
+<option value="960">+960</option>
+<option value="961">+961</option>
+<option value="962">+962</option>
+<option value="963">+963</option>
+<option value="964">+964</option>
+<option value="965">+965</option>
+<option value="966">+966</option>
+<option value="967">+967</option>
+<option value="968">+968</option>
+<option value="971">+971</option>
+<option value="972">+972</option>
+<option value="973">+973</option>
+<option value="974">+974</option>
+<option value="975">+975</option>
+<option value="976">+976</option>
+<option value="977">+977</option>
+<option value="98">+98</option>
+<option value="992">+992</option>
+<option value="993">+993</option>
+<option value="994">+994</option>
+<option value="995">+995</option>
+<option value="996">+996</option>
+<option value="998">+998</option>
+</select><input type="text" name="dest_num[]" class="champ_flat dest_manu_champ_tel no_submit" id="num_tel"></div>
+<br><a href="https://ecampaign.prosoluce.fr/m_compose.php#" onclick="add_champ_dest_manu(&#39;sms&#39;); this.blur(); return false;"><img src="./requete_files/add.png" alt="Ajouter un destinataire"> Ajouter un destinataire</a>
+			</div>
+			
+
+			
+			<br> <br> <br> <input type="button" class="submit" id="bt_to_step2" value="Étape suivante &gt;&gt;" onclick="goto_step(1, 2);">
+		</div>
+		<!-- == FILTRAGE =================================================================== -->
+		<div id="etape_filtrage" style="display: none;">
+			<h3>Filtrage des destinataires</h3>
+						
+			<table class="tableau">
+				<tbody><tr class="header">
+					<th style="width: 75px;"></th>
+					<th>Champ à filtrer</th>
+					<th>Opérateur</th>
+					<th>Valeur</th>
+					<th style="width: 20px;">&nbsp;</th>
+				</tr>
+			
+			
+			</tbody></table>
+			
+			<br>
+			
+			<a href="https://ecampaign.prosoluce.fr/m_compose.php#" onclick="add_filtrage_critere(); this.blur(); return false;"><img src="./requete_files/add.png" alt="Ajouter un critère de filtrage"> Ajouter un nouveau critère de filtrage</a><br>
+			<br>			
+			<a href="https://ecampaign.prosoluce.fr/m_compose.php#" onclick="visu_filtrage(); this.blur(); return false;"><img src="./requete_files/table_gear.png" alt="Visualiser les contacts sélectionnés"> Visualiser le résultat du filtrage</a>
+
+		
+			<br> <br> <br> <input type="button" class="submit" value="&lt;&lt; Étape précédente" onclick="goto_step(2, 1);"> <input type="button" class="submit" value="Étape suivante &gt;&gt;" onclick="goto_step(2, 3);">
+		</div>
+		<!-- == REDACTION ================================================================== -->
+		<div id="etape_redaction" style="display: none;">
+		
+<style>
+.tags_dropdown {
+	float:right;
+    position: relative;
+    display: inline-block;
+}
+
+.tags_dropdown_content {
+    display: none;
+    position: absolute;
+    right:0;
+    background-color: #ffffff;
+    min-width: 130px;
+    z-index: 1;
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);
+    padding: 10px 0;
+}
+
+.tags_dropdown_content a {
+    color: black;
+    padding: 8px 12px 3px 35px;
+    font-size:0.9em;
+    text-decoration: none;
+    display: block;
+    background: #ffffff url('images/icons/tag_blue_add.png') no-repeat 10px center;
+}
+
+.tags_dropdown_content a:hover {
+    background-color: #70a8d2;
+    color: #fff;
+}
+
+.tags_dropdown_show {
+    display:block;
+}
+</style>
+
+
+<script type="text/javascript">
+	var stop_sms = true;
+	var sample_cur_id = 0;
+	var sample_count = 0;
+	
+	/* Affecte les actions textarea */
+	$('#msg').keydown( function(){ maj_textarea(); } );
+	$('#msg').keyup( function(){ maj_textarea(); } );
+
+	/* Quand on clique dessus */
+	$('#msg')
+	  .focus(function() {
+	        if (this.value === this.defaultValue) {
+	            this.value = '';
+	        }
+	  })
+	  .blur(function() {
+	        if (this.value === '') {
+	            this.value = this.defaultValue;
+	        }
+	});
+	
+
+	/* MAJ au clic sur la case "stop sms" */
+	$('#stop_mention').change( function(){ maj_textarea(); } );
+
+	/* MAJ au changement de SenderID */
+	$('#sender_select').change( function(){ maj_textarea(); } );
+
+	/* MAJ initiale */
+	/*maj_textarea();*/
+
+	/* Boutons précédent et suivant pour visualisation du rendu */
+	$('#phone_sms_preview .prev').click(function(){			
+		if( sample_cur_id == 0 )				sample_cur_id = sample_count;
+		else									sample_cur_id--;			
+		maj_textarea();
+	});
+	$('#phone_sms_preview .next').click(function(){			
+		if( sample_cur_id == sample_count )		sample_cur_id = 0;
+		else									sample_cur_id++;			
+		maj_textarea();
+	});
+	
+	/* Liste déroulante tags */
+	window.onclick = function(event) {
+	  if (!event.target.matches('.tags_dropdown_bt')) {
+	
+	    var dropdowns = document.getElementsByClassName("tags_dropdown_content");
+	    var i;
+	    for (i = 0; i < dropdowns.length; i++) {
+	      var openDropdown = dropdowns[i];
+	      if (openDropdown.classList.contains('tags_dropdown_show')) {
+	        openDropdown.classList.remove('tags_dropdown_show');
+	      }
+	    }
+	  }
+	}
+	
+	function maj_textarea(){
+		/* 
+		Suppression des caractères spéciaux décoposables en plusieurs caractères,
+		directement dans le corps de message éditable (évite les err de comptage de caractères)
+		*/
+		orig = [	'æ',	'œ', 	'…'		];
+		repl = [	'ae',	'oe',	'...'	];
+		str = $('#msg').val();
+		for (i = 0; i < orig.length; i++) {
+			regex = new RegExp(orig[i], "igm");
+			str = str.replace( regex, repl[i] );
+		}
+
+		/* Suppression des caractères de contrôle dans le textarea */
+		str = str.replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F-\x9F]/g, "");
+
+		// Ne touche au champ que s'il y a un remplacement à faire 
+		if( $('#msg').val() != str ){	
+			$('#msg').val( str );
+		}
+
+		/* Valeur de la case stop sms */		
+		stop_sms = ($('#stop_mention:checked').val() == 1?true:false);
+
+		/* Nombre de destinataires dispo en preview */
+		sample_count = (sms_grp_cont_json.length-1);
+
+		/* Mise à jour de l'heure dans le preview */
+		currentTime = new Date ( );
+		currentMinutes = currentTime.getMinutes();
+		currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
+		$('#phone_sms_preview .hour').html( currentTime.getHours() + ':' + currentMinutes );
+		
+		/* Texte de la preview */
+		preview_html = nl2br( $('#msg').val() );
+		if(stop_sms === true){
+			if( $('#msg').val() != '' ){
+				preview_html += '<br />';
+			}
+			
+			preview_html += 'STOP 36000';
+		}
+
+		/* Remplacement des tags dans le preview */
+		if( typeof sms_grp_cont_json[sample_cur_id] !== 'undefined' ){
+			$.each( sms_grp_cont_json[sample_cur_id], function(index, value){
+				if( value === null ) value = '';
+				regex = new RegExp('\\['+index+'\\]', "gm");
+				preview_html = preview_html.replace(regex, value);
+			});	
+		}
+
+		/* Remplacement des caractères spéciaux dans la preview */
+		orig = ["á","â","ã","ç","ê","ë","ì","í","î","ï","ó","ô","õ","ú","û","ý","ÿ","À","Á","Â","Ã","È","Ê","Ë","Ì","Í","Î","Ï","Ñ","Ò","Ó","Ô","Õ","Ù","Ú","Û","Ý","¤","“","”","‘","’"];
+		repl = ["a","a","a","Ç","e","e","i","i","i","i","o","o","o","u","u","y","y","A","A","A","A","E","E","E","I","I","I","I","N","O","O","O","O","U","U","U","Y","E","\"","\"","'","'"];
+		for (i = 0; i < orig.length; i++) {
+			regex = new RegExp(orig[i], "gm");
+			preview_html = preview_html.replace(regex, repl[i]);
+		}
+
+		/* Mise à jour de la preview */
+		$('#phone_sms_preview .message .bulle').html(preview_html);
+		$('#phone_sms_preview .sender').html( $('#sender_select').val() );
+		
+		/* Mise à jour du comptage de caractères / Nombre de SMS */		
+		textCounterUse_v2(document.getElementById('msg'), document.getElementById('use'), document.getElementById('max_chars'), document.getElementById('nbmsg'), document.getElementById('pluriel_msg'), stop_sms);
+	}
+	
+	function load_template(){
+		id_template = $('#template_select').val();
+		
+		if(id_template != ''){
+			template_content = $.ajax({url: 'ajax/send_modules/compose_sms_get_template_content.php?id=' + id_template, async: false}).responseText;
+			$('#msg').val(template_content);
+			maj_textarea();
+		}
+	}
+
+
+
+</script>
+
+<h3>Rédaction du message SMS</h3>
+
+<div id="sms_compose_zone">
+	<div id="phone_sms_preview">
+		<div class="hour">11:02</div>
+		<div class="sender">Simplon</div>
+		<div class="prev" style="display: none;"></div>
+		<div class="next" style="display: none;"></div>
+		<div class="message"><p class="bulle">Rédigez votre message ici</p></div>
+	</div>
+
+	<div class="compose">
+		Nom d'expéditeur :<br>
+<select name="sender_select" id="sender_select" class="champ">
+<option value="Simplon" selected="selected">Simplon</option>
+</select>
+<br><br>
+				
+		<div id="liste_tags" style="float:right;"></div>
+		
+		Message SMS :<br>
+		<textarea id="msg" name="msg" cols="35" rows="6" style="height:150px;" class="champ">Rédigez votre message ici</textarea>
+		<br>
+		<span id="use">25</span>/<span id="max_chars">160</span> caractères utilisés soit <span id="nbmsg">1</span> message<span id="pluriel_msg"></span> 
+		<a href="https://ecampaign.prosoluce.fr/m_compose.php#" id="warn_len_tags" style="display: none;"><img src="./requete_files/error.png" alt="Attention" onclick="nd();" onmouseover="return overlib(&#39;Attention : La longueur des messages envoyés dépend également de la longueur du contenu présent au sein des champs dynamiques utilisés.&#39;);" onmouseout="return nd();"></a>
+		
+		<p>&nbsp;</p>
+		<p><input type="checkbox" class="checkbox" name="stop_mention" id="stop_mention" value="1"><label for="stop_mention">Mention "STOP SMS"</label> <a href="javascript:void(0);" onclick="$(&#39;&lt;div title=Information&gt;Dans le cadre de l\&#39;envoi de SMS à caractère commercial, vous avez l\&#39;obligation légale de permettre à vos destinataires de se désinscrire via la procédure \&#39;STOP SMS\&#39;.&lt;br /&gt;En cas de non respect de la réglementation, vous vous exposez à une plainte de vos destinataires et à une amende pouvant aller jusqu\&#39;à 20 000 €.&lt;/div&gt;&#39;).dialog();"><img src="./requete_files/help.png" style="vertical-align:middle;" alt="Aide"></a></p>
+	</div>
+
+</div>
+		<br> <br> <input type="button" class="submit" value="&lt;&lt; Étape précédente" onclick="goto_step(3, 2);"> <input type="button" class="submit" value="Étape suivante &gt;&gt;" onclick="goto_step(3, 4);" id="bt_next_step_redac">
+		</div>
+		<!-- == PARAMETRES ================================================================= -->
+		<div id="etape_parametres" style="display: none;">
+			<h3>Paramètres d'envoi</h3>
+
+<input type="hidden" name="typeroute" value="1">
+
+
+			<strong>Envoi :</strong> 
+			<label><input type="radio" name="differe" value="0" checked="checked" onclick="$(&#39;#compose_e_differe&#39;).fadeOut(&#39;normal&#39;); this.blur();"> Immédiat</label>
+			<label><input type="radio" name="differe" value="1" onclick="$(&#39;#compose_e_differe&#39;).fadeIn(&#39;normal&#39;); this.blur();"> Différé</label>
+		
+			<div id="compose_e_differe" style="display: none;" class="retrait_ajax">
+				<h4 style="margin: 0; padding: 0;">Date d'envoi :</h4>
+				<input type="text" name="planif_date" value="22/05/2017" id="planif_date" class="champ no_submit hasDatepicker" style="width: 100px;">
+				<h4>Heure d'envoi :</h4>
+				<select name="planif_heure_h" id="planif_heure_h" class="champ_flat">
+<option value="0" class="past" disabled="disabled">0</option>
+<option value="1" class="past" disabled="disabled">1</option>
+<option value="2" class="past" disabled="disabled">2</option>
+<option value="3" class="past" disabled="disabled">3</option>
+<option value="4" class="past" disabled="disabled">4</option>
+<option value="5" class="past" disabled="disabled">5</option>
+<option value="6" class="past" disabled="disabled">6</option>
+<option value="7" class="past" disabled="disabled">7</option>
+<option value="8" class="past" disabled="disabled">8</option>
+<option value="9" class="past" disabled="disabled">9</option>
+<option value="10" class="past" disabled="disabled">10</option>
+<option value="11" selected="selected">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+</select> h
+<select name="planif_heure_m" id="planif_heure_m" class="champ_flat">
+<option value="0" class="past" disabled="disabled">0</option>
+<option value="1" class="past" disabled="disabled">1</option>
+<option value="2" selected="selected">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+<option value="32">32</option>
+<option value="33">33</option>
+<option value="34">34</option>
+<option value="35">35</option>
+<option value="36">36</option>
+<option value="37">37</option>
+<option value="38">38</option>
+<option value="39">39</option>
+<option value="40">40</option>
+<option value="41">41</option>
+<option value="42">42</option>
+<option value="43">43</option>
+<option value="44">44</option>
+<option value="45">45</option>
+<option value="46">46</option>
+<option value="47">47</option>
+<option value="48">48</option>
+<option value="49">49</option>
+<option value="50">50</option>
+<option value="51">51</option>
+<option value="52">52</option>
+<option value="53">53</option>
+<option value="54">54</option>
+<option value="55">55</option>
+<option value="56">56</option>
+<option value="57">57</option>
+<option value="58">58</option>
+<option value="59">59</option>
+</select>
+				
+				<br> <br>
+				<p>
+					<img src="./requete_files/error.png" alt="Attention"> <strong>Attention :</strong><br>
+					Votre compte devra être crédité à la date spécifiée.<br>
+					Dans le cas contraire, votre campagne ne sera pas envoyée.
+				</p>
+			</div>
+			<br> <br> <br> <br> 
+			
+			<input type="button" class="submit" value="&lt;&lt; Étape précédente" onclick="goto_step(4, 3);">
+			<input type="submit" value="Envoyer la campagne" class="submit">
+		</div>
+	</form>
+</div></div><div id="ui-id-4" class="ui-tabs-panel ui-widget-content ui-corner-bottom" aria-live="polite" aria-labelledby="ui-id-3" role="tabpanel" aria-hidden="true" style="display: none;"></div><div id="ui-id-6" class="ui-tabs-panel ui-widget-content ui-corner-bottom" aria-live="polite" aria-labelledby="ui-id-5" role="tabpanel" aria-hidden="true" style="display: none;"></div><div id="ui-id-8" class="ui-tabs-panel ui-widget-content ui-corner-bottom" aria-live="polite" aria-labelledby="ui-id-7" role="tabpanel" aria-hidden="true" style="display: none;"></div>
+<div id="loading_div" style="display: none;"><p><img src="./requete_files/ajax-loader.gif"> &nbsp;<span>Chargement en cours</span></p></div></div>
+		</div>
+	</div>
+</div>
+
+	<div id="d_ban_bottom"></div>
+</div>
+
+<div id="d_menu_bottom">
+<a href="http://www.prosoluce.fr/" target="_blank">© PROSOLUCE</a> - Déclaration CNIL n°1346824 - <a href="https://ecampaign.prosoluce.fr/log.php?act=logout">Déconnexion</a></div>
+
+<script type="text/javascript">
+	/*$('img[@src$=.png]').ifixpng();*/
+	$('img[src$=".png"]').ifixpng();
+</script>
+
+<iframe style="position:absolute; visibility:hidden;" name="keep_ses" src="./requete_files/keep_ses.html" height="1" width="1"></iframe>
+
+
+
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div><div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-dialog-buttons ui-draggable ui-resizable" tabindex="-1" role="dialog" aria-describedby="popupjquery" aria-labelledby="ui-id-9" style="display: none; position: absolute;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix ui-draggable-handle"><span id="ui-id-9" class="ui-dialog-title">Visualisation des contacts sélectionnés</span><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" title="Close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">Close</span></button></div><div id="popupjquery" class="ui-dialog-content ui-widget-content">
+	<div class="content"></div>
+</div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button"><span class="ui-button-text">Fermer</span></button></div></div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div><span class="_hsShareImage hsShareImage" style="display: none;">&nbsp;</span></body></html>

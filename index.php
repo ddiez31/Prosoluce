@@ -1,9 +1,9 @@
 <?php
-include ('template/header.php');
+include ('pages/template/header.php');
 
 
 include ('pages/categories.php');
 
 
-include ('template/footer.php');
+include ('pages/template/footer.php');
 ?>

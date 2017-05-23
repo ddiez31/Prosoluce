@@ -6,7 +6,7 @@
                 <a href="pages/under_compose.php"><img src="assets/Edit_s.png" alt="Envoyer une campagne"><br>Envoyer une campagne</a>
             </div>
             <div class="column">
-                <a href="https://ecampaign.prosoluce.fr/m_groupes.php"><img src="assets/Users_s.png" alt="Groupes d&#39;envoi"><br>Groupes d'envoi</a>
+                <a href="pages/under_groupes.php"><img src="assets/Users_s.png" alt="Groupes d&#39;envoi"><br>Groupes d'envoi</a>
             </div>
             <div class="column">
                 <a href="https://ecampaign.prosoluce.fr/m_templates.php"><img src="assets/Folder_s.png" alt="Modèles"><br>Modèles</a>

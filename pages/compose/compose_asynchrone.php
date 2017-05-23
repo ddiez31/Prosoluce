@@ -1,5 +1,5 @@
 <?php
-include ('template/header.php');
+include ('../header.php');
 ?>
 
 
@@ -17,13 +17,13 @@ include ('template/header.php');
             </div>
         </div>
         <div class="ui basic buttons">
-            <a href="../index.php" class="ui button">Accueil</a>
-            <a href="under_compose.php" class="ui button">Retour</a>
+            <a href="../../index.php" class="ui button">Accueil</a>
+            <a href="../under_compose.php" class="ui button">Retour</a>
         </div>
     </div>
     </div>
 
 
 <?php
-include ('template/footer.php');
+include ('../footer.php');
 ?>

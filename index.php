@@ -1,5 +1,5 @@
 <?php
-include ('pages/template/header.php');
+include ('pages/header.php');
 
 
 
@@ -7,5 +7,5 @@ include ('pages/categories.php');
 
 
 
-include ('pages/template/footer.php');
+include ('pages/footer.php');
 ?>

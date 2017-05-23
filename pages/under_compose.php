@@ -1,5 +1,5 @@
 <?php
-include ('template/header.php');
+include ('header.php');
 ?>
 
 
@@ -8,8 +8,8 @@ include ('template/header.php');
         <div class="ui four column grid">
             <div class="row icones">
                 <div class="column">
-                    <a href="compose_synchrone.php"><br><h3>Synchrone</h3></a>
-                    <a href="compose_asynchrone.php"><br><h3>Asynchrone</h3></a>
+                    <a href="compose/compose_synchrone.php"><br><h3>Synchrone</h3></a>
+                    <a href="compose/compose_asynchrone.php"><br><h3>Asynchrone</h3></a>
                 </div>
             </div>
         </div>
@@ -21,5 +21,5 @@ include ('template/header.php');
 
 
 <?php
-include ('template/footer.php');
+include ('footer.php');
 ?>

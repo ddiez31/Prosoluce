@@ -67,7 +67,7 @@ exp {
 /* listes (style icones) */
 
 .icones {
-    margin: 30px 20px 50px 20px;
+    margin: 20px 20px 40px 20px;
     /*max-width: 735px;
     width: 135px;
     height: 140px;*/
@@ -1083,4 +1083,8 @@ a {
     left: 250px;
     border-width: 8px 0 8px 15px;
     border-color: transparent transparent transparent #ffffff;
+}
+
+:required {
+    border: 2px dotted red;
 }

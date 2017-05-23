@@ -13,8 +13,9 @@
     <meta name="copyright" content="PROSOLUCE">
 
     <title>eCampaign :: Communication multicanal :: PROSOLUCE</title>
-    <link rel="stylesheet" type="text/css" href="../style/semantic.min.css">
-    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../style/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="../../style/style.css">
 
     <body cz-shortcut-listen="true">
         <h1>eCampaign :: Communication multicanal :: PROSOLUCE</h1>
@@ -25,5 +26,5 @@
             <div id="d_menu_top" class="croix"></div>
 
             <div id="d_ban_top">
-                <a href="https://ecampaign.prosoluce.fr/index.php"><img src="../assets/visuel prosoluce header.png" alt="eCampaign - Communication multicanal"></a>
+                <a href="https://ecampaign.prosoluce.fr/index.php"><img src="../../assets/visuel prosoluce header.png" alt="eCampaign - Communication multicanal"></a>
             </div>

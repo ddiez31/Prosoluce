@@ -1,5 +1,5 @@
 <?php 
-include ('template/header.php');
+include ('header.php');
 ?>
 <div id="d_cont">
 	<h2>Groupes d'envoi</h2>
@@ -30,5 +30,5 @@ include ('template/header.php');
 </div>
 </div>
 <?php 
-include ('template/footer.php');
+include ('footer.php');
 ?>

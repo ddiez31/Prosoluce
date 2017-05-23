@@ -3,9 +3,11 @@ include ('../header.php');
 ?>
 
 <div id="d_cont">
-    <h2>Envoyer une campagne</h2>
-    <h3>Envoi de SMS sur des téléphones mobiles ou fixes (réponse synchrone)</h3>
-    <div class="ui top attached tabular menu" id="tabnavigation">
+    <div class="ui segment">
+        <h2 class="ui left floated header">Envoyer une campagne</h2>
+        <h3 class="ui orange right floated header">Envoi de SMS sur des téléphones mobiles ou fixes (réponse synchrone)</h3>
+        <div class="ui clearing divider"></div>
+        <div class="ui top attached tabular menu" id="tabnavigation">
         <a class="item active">Description</a>
         <a class="item">Codes xml</a>
         <a class="item">Codes erreurs</a>

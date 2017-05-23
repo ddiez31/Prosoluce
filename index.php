@@ -2,7 +2,7 @@
 include ('template/header.php');
 
 
-
+include ('template/menu.php');
 
 
 

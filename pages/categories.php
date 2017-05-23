@@ -9,10 +9,10 @@
                 <a href="pages/under_groupes.php"><img src="assets/Users_s.png" alt="Groupes d&#39;envoi"><br>Groupes d'envoi</a>
             </div>
             <div class="column">
-                <a href="https://ecampaign.prosoluce.fr/m_templates.php"><img src="assets/Folder_s.png" alt="Modèles"><br>Modèles</a>
+                <a href="pages/under_templates.php"><img src="assets/Folder_s.png" alt="Modèles"><br>Modèles</a>
             </div>
             <div class="column">
-                <a href="https://ecampaign.prosoluce.fr/m_tracking.php"><img src="assets/Magnifier_s.png" alt="Suivi des envois"><br>Suivi des envois</a>
+                <a href="pages/under_tracking.php"><img src="assets/Magnifier_s.png" alt="Suivi des envois"><br>Suivi des envois</a>
             </div>
         </div>
         <div class="row icones">

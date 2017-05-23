@@ -3,8 +3,8 @@ include ('../header.php');
 ?>
 
 <div id="d_cont">
-	<h2>Groupes d'envoi</h2>
-	<h3>Modification d'un groupe</h3>
+	<h2>modèles</h2>
+	<h3>Information sur un modèle</h3>
 	<div class="ui top attached tabular menu" id="tabnavigation">
 		<a class="item active" data-tab="one">Description</a>
 		<a class="item" data-tab="two">Codes xml</a>
@@ -14,7 +14,7 @@ include ('../header.php');
 	<div class="ui bottom attached active tab segment" data-tab="one">
 		<h4>URL d’appel</h4>
 		<div class="ui list">
-			<div class="item">http://api.ecampaign.prosoluce.fr/manageGroup/*ID_GROUPE*/modGroup</div>
+			<div class="item">http://api.ecampaign.prosoluce.fr/tracking/*ID*/getMailEvents</div>
 		</div>
 		<div class="ui divider"></div>
 		<h4>Paramètres</h4>
@@ -32,7 +32,7 @@ include ('../header.php');
 </div>
 <div class="ui basic buttons">
 	<a href="../../index.php" class="ui button">Accueil</a>
-	<a href="../under_groupes.php" class="ui button">Retour</a>
+	<a href="../under_tracking.php" class="ui button">Retour</a>
 </div>
 </div>
 </div>

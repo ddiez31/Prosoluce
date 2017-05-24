@@ -1,9 +1,12 @@
 <div id="d_cont">
-    <h2>Documentation</h2>
-    <div class="ui four column grid">
-        <div class="row icones">
-            <div class="column">
-                <a href="pages/under_compose.php"><img src="assets/Edit_s.png" alt="Envoyer une campagne"><br>Envoyer une campagne</a>
+    <div class="ui segment">
+        <h2 class="ui floated header">Documentation</h2>
+        <div class="ui clearing divider"></div>
+        <div class="ui four column grid">
+            <div class="row icones">
+                <div class="column">
+                    <a href="pages/under_compose.php"><img src="assets/Edit_s.png" alt="Envoyer une campagne"><br>Envoyer une campagne</a>
+                </div>
             </div>
             <div class="column">
                 <a href="pages/under_groupes.php"><img src="assets/Users_s.png" alt="Groupes d&#39;envoi"><br>Groupes d'envoi</a>
@@ -24,8 +27,11 @@
             </div>
             <div class="column">
                 <a href="https://ecampaign.prosoluce.fr/m_credit.php"><img src="assets/Cash_s.png" alt="Gérer mes crédits"><br>Gérer mes crédits</a>
+
             </div>
         </div>
     </div>
+</div>
+
 </div>
 </div>

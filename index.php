@@ -2,13 +2,23 @@
 include ('pages/header.php');
 
 
-
-include('ecampaign_demo_laurent.php');
-
-$test = new ecampaign("dm-simplon","SimplonERN");
-$test->sendSMS(1,array(array('+33','0687560651')),'test');
+include ('pages/menu.php');
 
 
+
+// include ('classes/ecampaign_class_sms.php');
+// $testSms = new ecampaign('dm-simplon', 'SimplonERN');
+// $testSms->sendSMS(1, array(array('+33', '0695501119')), 'C\'est pas bien d\'être jaloux!!');
+
+
+// include ('classes/ecampaign_class_mail.php');
+// $testMail = new ecampaign('dm-simplon', 'SimplonERN');
+// $testMail->sendMail(9, array(array('david.diez31@free.fr')), 'test sujet', 'test message');
+
+
+// include ('classes/ecampaign_class_mail.php');
+// $testMail = new ecampaign('dm-simplon', 'SimplonERN');
+// $testMail->sendMail(9, array(array('david.diez31@free.fr')), 'test sujet', 'test message');
 
 
 include ('pages/footer.php');

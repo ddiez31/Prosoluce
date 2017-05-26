@@ -4,6 +4,11 @@ include ('pages/header.php');
 
 
 // test tableau descrptif Julien de là!!!
+include ('pages/tables/descr_send_mess.php');
+include ('pages/tables/descr_gest_grp_envoi.php');
+include ('pages/tables/send_sms.php');
+include ('pages/tables/gest_grp_envois.php');
+include ('pages/tables/gest_cred.php');
 // include ('pages/tables/sms_default.php');
 // include ('pages/tables/sms_synchrone.php');
 // include ('pages/tables/sms_asynchrone.php');

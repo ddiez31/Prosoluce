@@ -50,9 +50,14 @@ include ('pages/menu.php');
 // $testMail->sendMail(9, array(array('david.diez31@free.fr')), 'test sujet', 'test message');
 
 
-// include ('classes/ecampaign_class_mail.php');
-// $testMail = new ecampaign('dm-simplon', 'SimplonERN');
-// $testMail->sendMail(9, array(array('david.diez31@free.fr')), 'test sujet', 'test message');
+// include ('classes/ecampaign_class_voice.php');
+// $testVoice = new ecampaign('dm-simplon', 'SimplonERN');
+// $testVoice->sendVoice(8, array(array('+33', '0782063177')), 'test');
+
+
+// include ('classes/ecampaign_class_fax.php');
+// $testFax = new ecampaign('dm-simplon', 'SimplonERN');
+// $testFax->sendFAX(10, array(array('+33', '0695501119')), 'fax.txt');
 
 
 include ('pages/footer.php');

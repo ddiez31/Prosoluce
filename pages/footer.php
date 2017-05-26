@@ -1,5 +1,5 @@
 	<footer id="footer">
-	<div id="box-footer" 
+	<div id="box-footer">
 	<a href="https://www.prosoluce.fr/mentions-legales.html">PROSOLUCE 2007-2017</a><br><br>
 		<a href="https://www.prosoluce.fr/mentions-legales.html">Mentions légales</a><br>
 		<a href="https://www.prosoluce.fr/contacter-prosoluce.html">Contact</a><br>

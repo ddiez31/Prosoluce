@@ -25,8 +25,10 @@
    <div id="burger"></div>
  </header>
 
+
+
  <div class="ui vertical menu" id="navbarvertical">
-  <div class="ui simple dropdown item" id="navbarvertical2">
+  <div class="ui dropdown item" id="navbarvertical2">
     Envoi de messages
     <i class="dropdown icon"></i>
     <div class="menu">
@@ -54,4 +56,5 @@
     </div>
   </div>
 </div>
+
 

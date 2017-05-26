@@ -2,7 +2,8 @@
 include ('pages/header.php');
 
 
-// include ('pages/categories.php');
+include ('pages/menu.php');
+
 
 // include ('classes/ecampaign_class_sms.php');
 // $testSms = new ecampaign('dm-simplon', 'SimplonERN');

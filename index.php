@@ -1,5 +1,6 @@
 <?php
-include ('pages/template/header.php');
+include ('pages/header.php');
+
 
 
 // test tableau descrptif Julien de là!!!
@@ -29,9 +30,25 @@ include ('pages/template/header.php');
 // include ('pages/code_errors/etat_remise.php');
 // test tableau descriptif Julien À de là!!!
 
-include ('pages/categories.php');
+include ('pages/menu.php');
 
 
 
-include ('pages/template/footer.php');
+
+// include ('classes/ecampaign_class_sms.php');
+// $testSms = new ecampaign('dm-simplon', 'SimplonERN');
+// $testSms->sendSMS(1, array(array('+33', '0695501119')), 'C\'est pas bien d\'être jaloux!!');
+
+
+// include ('classes/ecampaign_class_mail.php');
+// $testMail = new ecampaign('dm-simplon', 'SimplonERN');
+// $testMail->sendMail(9, array(array('david.diez31@free.fr')), 'test sujet', 'test message');
+
+
+// include ('classes/ecampaign_class_mail.php');
+// $testMail = new ecampaign('dm-simplon', 'SimplonERN');
+// $testMail->sendMail(9, array(array('david.diez31@free.fr')), 'test sujet', 'test message');
+
+
+include ('pages/footer.php');
 ?>

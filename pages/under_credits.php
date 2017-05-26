@@ -1,14 +1,13 @@
-a<?php 
+<?php 
 include ('header.php');
 ?>
 
 <div id="d_cont">
-    <h2>Suivi des envois</h2>
+    <h2>Méthodes pour la gestion des crédits</h2>
     <div class="ui four column grid">
         <div class="row icones">
             <div class="column">
-                <a href="tracking/tracking_get.php"><br><h3>Récupération de la liste des messages envoyés avec suivi</h3></a>
-                <a href="tracking/tracking_recovery_mail.php"><br><h3>E­mail : récupération du suivi des actions</h3></a>
+                <a href="credits/credits_management_credits.php"><br><h3>Consultation des crédits disponibles</h3></a>
             </div>
         </div>
     </div>

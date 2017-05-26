@@ -3,7 +3,8 @@ $(document).ready(function() {
     $('#tabnavigation .item').tab();
 
 
-
+    $('.ui.dropdown')
+        .dropdown();
 
 
 });

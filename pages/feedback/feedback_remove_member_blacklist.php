@@ -1,6 +1,3 @@
-<?php 
-include ('../header.php');
-?>
 
 <div id="d_cont">
 	<h2>Méthode pour la gestion des réponses et blacklists</h2>
@@ -30,12 +27,6 @@ include ('../header.php');
 		<p>test</p>
 	</div>
 </div>
-<div class="ui basic buttons">
-	<a href="../../index.php" class="ui button">Accueil</a>
-	<a href="../under_feedback.php" class="ui button">Retour</a>
+
 </div>
 </div>
-</div>
-<?php 
-include ('../footer.php');
-?>

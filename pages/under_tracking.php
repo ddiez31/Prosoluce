@@ -1,6 +1,4 @@
-a<?php 
-include ('header.php');
-?>
+
 
 <div id="d_cont">
     <h2>Suivi des envois</h2>
@@ -13,11 +11,6 @@ include ('header.php');
         </div>
     </div>
 </div>
-<div class="ui basic buttons">
-    <a href="../index.php" class="ui button">Accueil</a>
+
 </div>
 </div>
-</div>
-<?php
-include ('footer.php');
-?>

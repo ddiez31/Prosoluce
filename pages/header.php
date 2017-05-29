@@ -12,10 +12,10 @@
 <!--<base href="http://www.prosoluce.fr/">-->
 <link rel="icon" type="image/png" href="https://www.prosoluce.fr/uploads/design/imgs/favicon.png">
 
-<script src="../../js/jquery-3.2.1.min.js"></script>
-<script src="../../js/semantic-2.2.10.min.js"></script>
-<link rel="stylesheet" type="text/css" href="../../style/semantic.min.css">
-<link rel="stylesheet" type="text/css" href="../../style/style.css">
+<script src="./js/jquery-3.2.1.min.js"></script>
+<script src="./js/semantic-2.2.10.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./style/semantic.min.css">
+<link rel="stylesheet" type="text/css" href="./style/style.css">
 
 
 </head><body cz-shortcut-listen="true">
@@ -27,9 +27,9 @@
 
 <div class="ui vertical menu" id='navbarvertical'>
   <div class="ui left pointing dropdown link item"><i class="dropdown icon"></i>Envoi de messages<div class="menu">
-      <div class="item">Messages SMS vers des téléphones mobiles et fixes</div>
+      <div class="item"><a href="/?compose_synchrone">Messages SMS vers des téléphones mobiles et fixes</a></div>
       <div class="item">Campagnes d'appels téléphoniques (appels voix)</div>
-      <div class="item">Courriers éléctroniques (e-mails)</div>
+      <div class="item">Courriers électroniques (e-mails)</div>
       <div class="item">Télécopies (FAX)</div>
     </div>
   </div>

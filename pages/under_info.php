@@ -1,6 +1,4 @@
-a<?php 
-include ('header.php');
-?>
+
 
 <div id="d_cont">
     <h2>Méthode pour l'obtention d'information sur les numéros de télephone</h2>
@@ -12,11 +10,6 @@ include ('header.php');
         </div>
     </div>
 </div>
-<div class="ui basic buttons">
-    <a href="../index.php" class="ui button">Accueil</a>
+
 </div>
 </div>
-</div>
-<?php
-include ('footer.php');
-?>

@@ -1,5 +1,20 @@
 <?php
-include ('pages/header.php');
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+require __DIR__ . '/lib/functions.php';
+
+getPart('header');
+getContent();
+getPart('footer');
+
+
+?>
+
+<?php
+
 
 
 
@@ -30,7 +45,7 @@ include ('pages/header.php');
 // include ('pages/code_errors/etat_remise.php');
 // test tableau descriptif Julien À de là!!!
 
-include ('pages/menu.php');
+
 
 
 
@@ -47,13 +62,14 @@ include ('pages/menu.php');
 
 // include ('classes/ecampaign_class_voice.php');
 // $testVoice = new ecampaign('dm-simplon', 'SimplonERN');
-// $testVoice->sendVoice(8, array(array('+33', '0782063177')), 'test');
+// $testVoice->sendVoice(8, array(array('+33', '0782063177')), 3519);
 
 
 // include ('classes/ecampaign_class_fax.php');
+// $file = file_get_contents('fax.pdf');
+// echo $file;
 // $testFax = new ecampaign('dm-simplon', 'SimplonERN');
-// $testFax->sendFAX(10, array(array('+33', '0695501119')), 'fax.txt');
+// $testFax->sendFAX(10, array(array('+33', '0561989052')), $file);
 
 
-include ('pages/footer.php');
 ?>

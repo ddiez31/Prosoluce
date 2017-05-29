@@ -1,6 +1,4 @@
-<?php
-include ('../header.php');
-?>
+
 
     <div id="d_cont">
     <div class="ui segment">
@@ -32,14 +30,7 @@ include ('../header.php');
             <p>test</p>
         </div>
     </div>
-    <div class="ui basic buttons">
-        <a href="../../index.php" class="ui button">Accueil</a>
-        <a href="compose_synchrone.php" class="ui button">Retour</a>
-    </div>
+ 
     </div>
     </div>
 
-
-<?php
-include ('../footer.php');
-?>

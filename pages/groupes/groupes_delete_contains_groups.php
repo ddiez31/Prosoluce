@@ -1,6 +1,3 @@
-<?php 
-include ('../header.php');
-?>
 
 <div id="d_cont">
 	<h2>Groupes d'envoi</h2>
@@ -30,12 +27,6 @@ include ('../header.php');
 		<p>test</p>
 	</div>
 </div>
-<div class="ui basic buttons">
-	<a href="../../index.php" class="ui button">Accueil</a>
-	<a href="../under_groupes.php" class="ui button">Retour</a>
+
 </div>
 </div>
-</div>
-<?php 
-include ('../footer.php');
-?>

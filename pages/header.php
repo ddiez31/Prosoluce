@@ -27,10 +27,10 @@
 
 <div class="ui vertical menu" id='navbarvertical'>
   <div class="ui left pointing dropdown link item"><i class="dropdown icon"></i>Envoi de messages<div class="menu">
-      <div class="item"><a href="/?compose_synchrone">Messages SMS vers des téléphones mobiles et fixes</a></div>
-      <div class="item">Campagnes d'appels téléphoniques (appels voix)</div>
-      <div class="item">Courriers électroniques (e-mails)</div>
-      <div class="item">Télécopies (FAX)</div>
+      <div class="item"><a href="/?compose_sms">Messages SMS vers des téléphones mobiles et fixes</a></div>
+      <div class="item"><a href="/?compose_voice">Campagnes d'appels téléphoniques (appels voix)</a></div>
+      <div class="item"><a href="/?compose_mail">Courriers électroniques (e-mails)</a></div>
+      <div class="item"><a href="/?compose_fax">Télécopies (FAX)</a></div>
     </div>
   </div>
   <div class="ui left pointing dropdown link item"><i class="dropdown icon"></i>Structure de groupes<div class="menu">

@@ -4,10 +4,10 @@
 	<h2>Méthode pour la gestion des réponses et blacklists</h2>
 	<h3>Obtention de la liste des destinataires blacklistés</h3>
 	<div class="ui top attached tabular menu" id="tabnavigation">
-		<a class="item active" data-tab="one">Description</a>
-		<a class="item" data-tab="two">Codes xml</a>
-		<a class="item" data-tab="three">Codes erreurs</a>
-		<a class="item" data-tab="four">Test en ligne</a>
+            <a class="item active" data-tab="one">Description</a>
+            <a class="item" data-tab="two">Requêtes</a>
+            <a class="item" data-tab="three">Réponses</a>
+            <a class="item" data-tab="four">Exemple d'intégration</a>
 	</div>
 	<div class="ui bottom attached active tab segment" data-tab="one">
 		<h4>URL d’appel</h4>

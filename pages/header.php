@@ -86,9 +86,5 @@
 
 <div class="container">
 
-<?php
 
-highlight_file('classes/ecampaign_class_fax.php');
-
-?>
 

@@ -24,10 +24,10 @@ class ecampaign{
 	 * Appels téléphoniques
 	 * @param $route Identifiant de la route à utiliser
 	 * @param $recipients Liste des destinataires : array( array(indicatif, numero), array(indicatif, numero)... )
+	 * @param $template_id Identifiant du template à utiliser
 	 * @param $message Message SMS (optionnel)
 	 * @param $senderid Nom d'expéditeur SMS (optionnel)
 	 * @param $callerid Numéro d'appelant pour les appels téléphoniques (optionnel)
-	 * @param $template_id Identifiant du template à utiliser (optionnel)
 	 * @param $send_date Date d'envoi sous la forme AAAA:MM:JJ HH:MM:SS (optionnel)
 	 * @param $group_id Identifiant du groupe d'envoi à utiliser (optionnel)
 	 * @param $group_fields Champs du groupe d'envoi à utiliser : array( 'champ1', 'champ2'... ) (optionnel)
@@ -35,14 +35,14 @@ class ecampaign{
 	 * @param $group_filter_global_op Opérateur de filtrage global : OR / AND (optionnel)
 	 * @param $group_filter_criterias Critères de filtrage : array ( array( champ, opérateur, valeur ), array(...)... ) (optionnel / opérateurs disponibles : =, !=, LIKE, NOTLIKE, BEGIN, NOTBEGIN, END, NOTEND, NOTNULL et NULL)
 	 */
-	public function sendVoice($route, $recipients, $message=null, $senderid=null, $callerid=null, $template_id=null, $send_date=null, $group_id=null, $group_fields=null, $group_filter=false, $group_filter_global_op=null, $group_filter_criterias=null){
+	public function sendVoice($route, $recipients, $template_id, $message=null, $senderid=null, $callerid=null, $send_date=null, $group_id=null, $group_fields=null, $group_filter=false, $group_filter_global_op=null, $group_filter_criterias=null){
 		$req  = "<sendVoice>\n";
 		$req .= "<route>{$route}</route>\n";
 		if($senderid !== null)			$req .= "<senderID>{$senderid}</senderID>\n";
 		if($callerid !== null)			$req .= "<callerID>{$callerid}</callerID>\n";
-		if($template_id !== null)		$req .= "<templateID>{$template_id}</templateID>\n";
 		if($send_date !== null)			$req .= "<sendDate>{$send_date}</sendDate>\n";
-		$req .= "<message>{$message}</message>\n";
+		if($message !== null)		$req .= "<message>{$message}</message>\n";
+		$req .= "<templateID>{$template_id}</templateID>\n";
 		$req .= $this->Gen_recip_XML('phone', $recipients, $group_id, $group_fields, $group_filter, $group_filter_global_op, $group_filter_criterias);
 		$req .= "</sendVoice>";
 

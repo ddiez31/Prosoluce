@@ -14,7 +14,7 @@ h3 {
     font-size: 17px;
     font-weight: bold;
     /*margin:35px 0 10px 0;*/
-    margin: 15px 0 20px 0;
+    margin: 0.938em 0 1.25em 0;
     padding: 0;
     color: #ff921e;
 }
@@ -27,21 +27,27 @@ h3.second {
 }
 
 h4 {
-    margin-top: 15px;
-    margin-bottom: 1px;
-    font-size: 14px;
+    margin-top: 0.938em;
+    margin-bottom: 0.063em;
+    font-size: 0.875em;
     color: #2e6e9e;
 }
 
 h5 {
-    margin-top: 25px;
-    margin-bottom: 15px;
-    font-size: 14px;
+    margin-top: 1.563em;
+    margin-bottom: 0.938em;
+    font-size: 0.875em;
+}
+
+.ui.fixed.menu.navbar {
+    background-color: rgba(0, 0, 0, 0);
 }
 
 #navbarvertical {
     margin-top: 7em;
     position: fixed;
+    z-index: 2;
+    border: 1px solid #FAB224;
 }
 
 .ui.left.pointing.dropdown.link.item {
@@ -50,19 +56,24 @@ h5 {
 }
 
 footer {
-    display: flex;
+    display: table-cell;
     flex-wrap: wrap;
-    background: #152f64;
-    margin: 20px 0 0 0;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 1.25em 0 0 0;
     position: fixed;
     bottom: 0;
     width: 100%;
+    text-align: center;
 }
 
 #box-footer {
-    flex: 1;
-    padding: 30px;
-    height: 142px;
+    display: inline-flex;
+    flex: 2;
+    padding-bottom: 0.625em;
+    padding-right: 1.80em;
+    padding-left: 1.80em;
+    padding-top: 1em;
+    height: 4em;
 }
 
 #box-footer a {
@@ -74,6 +85,14 @@ footer {
     color: #bce;
 }
 
+a#footersoluce {
+    color: #fab224;
+}
+
+a:hover#footersoluce {
+    color: #bce;
+}
+
 * {
     margin: 0;
 }
@@ -81,7 +100,7 @@ footer {
 .page-wrap {
     height: 80vh;
     /* equal to footer height */
-    margin-bottom: -180px;
+    margin-bottom: -11.30em;
 }
 
 
@@ -93,5 +112,46 @@ footer {
 
 .site-footer,
 .page-wrap:after {
-    height: 180px;
+    height: -11.30em;
+}
+
+.container {
+    height: 70%;
+    width: 78%;
+    margin-top: 15vh;
+    margin-right: 1vw;
+    margin-left: 20%;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    opacity: 0.9;
+}
+
+.ui.menu .ui.dropdown .menu>.item {
+    background-image: linear-gradient(#152f64, #003399) !important;
+    color: white !important;
+}
+
+body {
+    background-image: url(../assets/fond2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+@media (max-width: 360px) {
+    .container {
+        height: 70%;
+        width: 78%;
+        margin-top: 70vh;
+        margin-right: 1vw;
+        margin-left: 20%;
+    }
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        background: #152f64;
+        margin: 1.25em 0 0 0;
+        bottom: 0;
+        width: 100%;
+    }
 }

@@ -54,7 +54,6 @@ class ecampaign{
 		$code		= (int) $x->code;
 		$message	= (string) $x->message;
 		$recipients	= $x->recipients->phone;
-
 		if($code != 0)		throw new Exception($message, $code);
 
 		foreach($recipients as $item){

@@ -1,21 +1,24 @@
-$(document).ready(function() {
-    // navigation des onglets
-    $('#tabnavigation .item').tab();
 
-    $('.ui.dropdown')
-        .dropdown();
+<!DOCTYPE html>
+<!-- saved from url=(0025)https://www.prosoluce.fr/ -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--<base href="/">--><base href=".">
+<title>Prosoluce, développeur de contacts</title>
+<meta name="description" content="Solutions de communication multicanal, logiciels de prospection, applications téléphoniques, intégration web, mobile et services d&#39;infrastructure.">
+<meta name="keywords" content="prosoluce, communication, multicanal, omnicanal, infrastructure, reseau, web, hebergement, developpement, integration, solutions, applications, mobile, marketing, telemarketing, ndd, nom de domaine"> 
+<meta name="generator" content="PROSOLUCE 2007-2017">
 
 
+<meta name="viewport" content="width=device-width">
+<!--<base href="http://www.prosoluce.fr/">-->
+<link rel="icon" type="image/png" href="https://www.prosoluce.fr/uploads/design/imgs/favicon.png">
 
-    // $(".container").css({ display: "none" });
-    // $('.ui.menu .ui.dropdown .menu>.item').click(function() {
-    //     $(".container").css({ display: "block" });
-    // });
 
-});ript src="http://localhost:8000/js/jquery-3.2.1.min.js"></script>
-<script src="http://localhost:8000/js/semantic-2.2.10.min.js"></script>
-<link rel="stylesheet" type="text/css" href="http://localhost:8000/style/semantic.min.css">
-<link rel="stylesheet" type="text/css" href="http://localhost:8000/style/style.css">
+<script src="./js/jquery-3.2.1.min.js"></script>
+<script src="./js/semantic-2.2.10.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./style/semantic.min.css">
+<link rel="stylesheet" type="text/css" href="./style/style.css">
+
 
 
 </head><body cz-shortcut-listen="true">
@@ -27,10 +30,10 @@ $(document).ready(function() {
 
 <div class="ui vertical menu" id='navbarvertical'>
   <div class="ui left pointing dropdown link item"><i class="dropdown icon"></i>Envoi de messages<div class="menu">
-      <div class="item">Messages SMS vers des téléphones mobiles et fixes</div>
-      <div class="item">Campagnes d'appels téléphoniques (appels voix)</div>
-      <div class="item">Courriers éléctroniques (e-mails)</div>
-      <div class="item">Télécopies (FAX)</div>
+      <div class="item"><a href="/?compose_sms">Messages SMS vers des téléphones mobiles et fixes</a></div>
+      <div class="item"><a href="/?compose_voice">Campagnes d'appels téléphoniques (appels voix)</a></div>
+      <div class="item"><a href="/?compose_mail">Courriers électroniques (e-mails)</a></div>
+      <div class="item"><a href="/?compose_fax">Télécopies (FAX)</a></div>
     </div>
   </div>
   <div class="ui left pointing dropdown link item"><i class="dropdown icon"></i>Structure de groupes<div class="menu">
@@ -80,14 +83,7 @@ $(document).ready(function() {
     </div>
   </div>
 </div>
-<?php
 
-if ((!isset($_GET=='index.php'){
-
-}
-
-
-?>
 
 <div class="container">
 

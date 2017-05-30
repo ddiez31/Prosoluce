@@ -125,6 +125,7 @@ a:hover#footersoluce {
     z-index: 1;
     background-color: white;
     opacity: 0.9;
+    overflow: auto;
 }
 
 .ui.menu .ui.dropdown .menu>.item {
@@ -146,12 +147,11 @@ body {
         margin-right: 1vw;
         margin-left: 20%;
     }
-    footer {
+    /*footer {
         display: flex;
         flex-wrap: wrap;
-        background: #152f64;
         margin: 1.25em 0 0 0;
         bottom: 0;
         width: 100%;
-    }
+    }*/
 }

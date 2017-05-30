@@ -10,24 +10,6 @@
 
 </footer>
 
-
-
-
-
-	<a id="haut" href="https://www.prosoluce.fr/#haut-page" style="opacity: 1;"></a>
-		<script type="text/javascript" src="./Prosoluce, développeur de contacts_files/teacookie.min.js"></script>
-	<script type="text/javascript" src="./Prosoluce, développeur de contacts_files/cycle2.min.js"></script>
-	<script type="text/javascript" src="./Prosoluce, développeur de contacts_files/carousel.min.js"></script>
-	<script type="text/javascript" src="./Prosoluce, développeur de contacts_files/standard.js"></script>
-	<script type="text/javascript">
-		 function enableBtn(){
-		 	 $('#btn-rappel').removeAttr('disabled');
-		 } 
-	</script>
-
-	 
-
-
 </body>
 
 <script src="./js/jquery-3.2.1.min.js"></script>

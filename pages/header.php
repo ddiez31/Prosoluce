@@ -24,7 +24,7 @@
 </head><body cz-shortcut-listen="true">
 <div id="haut-page" class="pousse-footer">
   <header class="ui fixed menu navbar">
-   <a href="https://www.prosoluce.fr/"><img id="logo" src="http://localhost:8000/assets/logo-prosoluce.png" alt="Logo PROSOLUCE"></a>
+   <a href="#"><img id="logo" src="./assets/logo-prosoluce.png" alt="Logo PROSOLUCE"></a>
    <div id="burger"></div>
  </header>
 

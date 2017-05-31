@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!-- saved from url=(0025)https://www.prosoluce.fr/ -->
 <html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -17,6 +16,7 @@
 <script src="./js/jquery-3.2.1.min.js"></script>
 <script src="./js/semantic-2.2.10.min.js"></script>
 <link rel="stylesheet" type="text/css" href="./style/semantic.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/components/icon.min.css">
 <link rel="stylesheet" type="text/css" href="./style/style.css">
 
 
@@ -86,6 +86,3 @@
 </div>
 
 <div class="container">
-
-
-

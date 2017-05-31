@@ -1,6 +1,4 @@
-
-
-    <div id="d_cont">
+<div id="d_cont">
     <div class="ui segment">
         <h2 class="ui left floated header">Envoyer une campagne</h2>
         <h3 class="ui orange right floated header">Télécopies fax (réponse synchrone)</h3>
@@ -18,19 +16,27 @@
             </div>
             <div class="ui divider"></div>
             <h4>Paramètres</h4>
-     
+
         </div>
         <div class="ui bottom attached tab segment" data-tab="two">
-            <p>test</p>
+            <button class="ui secondary button mini" id="copy-button" data-clipboard-target="#post-shortlink-two"><i class="large copy icon"></i></button>
+            <p id="post-shortlink-two">
+                
+            </p>
         </div>
         <div class="ui bottom attached tab segment" data-tab="three">
-            <p>test</p>
+            <button class="ui secondary button mini" id="copy-button" data-clipboard-target="#post-shortlink-three"><i class="large copy icon"></i></button>
+            <p id="post-shortlink-three">
+
+            </p>
         </div>
         <div class="ui bottom attached tab segment" data-tab="four">
-            <p>test</p>
+            <button class="ui secondary button mini" id="copy-button" data-clipboard-target="#post-shortlink-four"><i class="large copy icon"></i></button>
+            <p id="post-shortlink-four">
+                <?php highlight_file('./classes/ecampaign_class_fax.php') ?>
+            </p>
         </div>
     </div>
 
-    </div>
-    </div>
-
+</div>
+</div>

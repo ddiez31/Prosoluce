@@ -33,6 +33,11 @@
             <p id="post-shortlink-three">
 
             </p>
+            <h4>Codes communs</h4>
+            <?php include ('pages/code_errors/codes_communs.php'); ?>
+            <?php include ('pages/code_errors/codes_status.php');
+            include ('pages/code_errors/codes_errors.php'); ?>
+    </div>
         </div>
         <div class="ui bottom attached tab segment" data-tab="four">
             <button class="ui secondary button mini" id="copy-button" data-clipboard-target="#post-shortlink-four"><i class="large copy icon"></i></button>

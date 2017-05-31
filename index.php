@@ -49,7 +49,10 @@ getPart('footer');
 // include ('pages/code_errors/codes_relat_suivi_envois.php');
 // include ('pages/code_errors/codes_status.php');
 // include ('pages/code_errors/codes_errors.php');
-// include ('pages/code_errors/codes_etat_remise.php');
+// include ('pages/code_errors/code_etat_sms.php');
+// include ('pages/code_errors/codes_etat_appels.php');
+// include ('pages/code_errors/codes_etat_mail.php');
+// include ('pages/code_errors/codes_etat_fax.php');
 // test tableau descriptif Julien À de là!!!
 
 

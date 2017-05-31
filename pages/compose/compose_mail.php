@@ -23,8 +23,6 @@
             <p>Il s'agit de la description des paramètres présents au sein des requêtes XML d'envoi de messages qui vont être détaillées sur les pages suivantes.</p>
             <?php 
             include ('pages/tables/table_sms_default.php');
-            include ('pages/tables/table_sms_synchrone.php');
-            include ('pages/tables/table_sms_asynchrone.php');
             ?>
         </div>
         <div class="ui bottom attached tab segment" data-tab="two">
@@ -34,6 +32,14 @@
         <div class="ui bottom attached tab segment" data-tab="three">
             <button class="ui secondary button mini" id="copy-button" data-clipboard-target="#post-shortlink-three"><i class="large copy icon"></i></button>
                 <?php echo'<pre><code class="html" id="post-shortlink-three">'; highlight_file('./pages/codes_xml/code_requetes/******.php');  echo'</code></pre>'; ?>
+            <h4>Réponse synchrone</h4>
+            <?php include ('pages/tables/table_sms_synchrone.php'); ?>
+            <h4>Réponse asynchrone</h4>
+            <?php include ('pages/tables/table_sms_asynchrone.php');?>
+            <h4>Codes communs</h4>
+            <?php include ('pages/code_errors/codes_communs.php'); ?>
+            <?php include ('pages/code_errors/codes_méthodes_send.php'); ?>
+            <?php include ('pages/code_errors/codes_etat_mail.php'); ?>
         </div>
         <div class="ui bottom attached tab segment" data-tab="four">
             <button class="ui secondary button mini" id="copy-button" data-clipboard-target="#post-shortlink-four"><i class="large copy icon"></i></button>

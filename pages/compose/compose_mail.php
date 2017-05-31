@@ -19,7 +19,7 @@
             <div class="ui divider"></div>
             <h4>Paramètres</h4>
             <?php include ('pages/tables/table_send_sms.php');?>
-            <h3>Description des paramètres</h3>
+            <h4>Description des paramètres</h4>
             <p>Il s'agit de la description des paramètres présents au sein des requêtes XML d'envoi de messages qui vont être détaillées sur les pages suivantes.</p>
             <?php 
             include ('pages/tables/table_sms_default.php');
@@ -28,13 +28,22 @@
             ?>
         </div>
         <div class="ui bottom attached tab segment" data-tab="two">
-            <p>test</p>
+            <button class="ui secondary button mini" id="copy-button" data-clipboard-target="#post-shortlink-two"><i class="large copy icon"></i></button>
+            <p id="post-shortlink-two">
+                
+            </p>
         </div>
         <div class="ui bottom attached tab segment" data-tab="three">
-            <p>test</p>
+            <button class="ui secondary button mini" id="copy-button" data-clipboard-target="#post-shortlink-three"><i class="large copy icon"></i></button>
+            <p id="post-shortlink-three">
+
+            </p>
         </div>
         <div class="ui bottom attached tab segment" data-tab="four">
-            <p>test</p>
+            <button class="ui secondary button mini" id="copy-button" data-clipboard-target="#post-shortlink-four"><i class="large copy icon"></i></button>
+            <p id="post-shortlink-four">
+                <?php highlight_file('./classes/ecampaign_class_mail.php') ?>
+            </p>
         </div>
     </div>
 

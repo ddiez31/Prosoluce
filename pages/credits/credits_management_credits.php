@@ -1,5 +1,3 @@
-
-
 <div id="d_cont">
 	<h2>Méthode pour la gestion des crédits</h2>
 	<h3>Consultation des crédits disponibles</h3>
@@ -20,15 +18,24 @@
 		<?php include ('pages/tables/table_gest_cred.php'); ?>
 
 	</div>
-	<div class="ui bottom attached tab segment" data-tab="two">
-		<p>test</p>
-	</div>
-	<div class="ui bottom attached tab segment" data-tab="three">
-		<p>test</p>
-	</div>
-	<div class="ui bottom attached tab segment" data-tab="four">
-		<p>test</p>
-	</div>
+        <div class="ui bottom attached tab segment" data-tab="two">
+            <button class="ui secondary button mini" id="copy-button" data-clipboard-target="#post-shortlink-two"><i class="large copy icon"></i></button>
+            <p id="post-shortlink-two">
+                
+            </p>
+        </div>
+        <div class="ui bottom attached tab segment" data-tab="three">
+            <button class="ui secondary button mini" id="copy-button" data-clipboard-target="#post-shortlink-three"><i class="large copy icon"></i></button>
+            <p id="post-shortlink-three">
+
+            </p>
+        </div>
+        <div class="ui bottom attached tab segment" data-tab="four">
+            <button class="ui secondary button mini" id="copy-button" data-clipboard-target="#post-shortlink-four"><i class="large copy icon"></i></button>
+            <p id="post-shortlink-four">
+                <?php  ?>
+            </p>
+        </div>
 </div>
 
 </div>

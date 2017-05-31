@@ -21,7 +21,6 @@
 			<?php 
 			include ('pages/tables/table_descr_gest_grp_envoi.php');
 			?>
-
 		</div>
         <div class="ui bottom attached tab segment" data-tab="two">
             <button class="ui secondary button mini" id="copy-button" data-clipboard-target="#post-shortlink-two"><i class="large copy icon"></i></button>
@@ -34,6 +33,10 @@
             <p id="post-shortlink-three">
 
             </p>
+            <h4>Codes communs</h4>
+            <?php include ('pages/code_errors/codes_communs.php'); ?>
+            <?php include ('pages/code_errors/codes_relat_group_send.php'); ?>
+	</div>
         </div>
         <div class="ui bottom attached tab segment" data-tab="four">
             <button class="ui secondary button mini" id="copy-button" data-clipboard-target="#post-shortlink-four"><i class="large copy icon"></i></button>

@@ -17,6 +17,7 @@
 <script src="./js/jquery-3.2.1.min.js"></script>
 <script src="./js/semantic-2.2.10.min.js"></script>
 <link rel="stylesheet" type="text/css" href="./style/semantic.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/components/icon.min.css">
 <link rel="stylesheet" type="text/css" href="./style/style.css">
 
 
@@ -48,6 +49,7 @@
       <a class="item" href="/?groupes_info_groups">Informations sur un groupe</a>
       <a class="item" href="/?groupes_create_groups">Création d'un groupe</a>
       <a class="item" href="/?groupes_change_groups">Modification d'un groupe</a>
+      <a class="item" href="/?groupes_delete_groups">Suppression d'un groupe</a>
       <a class="item" href="/?groupes_delete_contains_groups">Supprime le contenu d'un groupe d'envoi</a>
       <a class="item" href="/?groupes_import_contacts_XML">Import de contacts depuis un fichier XML</a>
       <a class="item" href="/?groupes_add_fields_groups">Ajouter des champs dans un groupe</a>

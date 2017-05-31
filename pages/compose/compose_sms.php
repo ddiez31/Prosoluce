@@ -27,15 +27,13 @@
         </div>
         <div class="ui bottom attached tab segment" data-tab="two">
             <button class="ui secondary button mini" id="copy-button" data-clipboard-target="#post-shortlink-two"><i class="large copy icon"></i></button>
-            <p id="post-shortlink-two">
-            </p>
+                <?php echo'<pre><code class="html" id="post-shortlink-two">'; highlight_file('./pages/codes_xml/code_requetes/req_mess_sms.php');  echo'</code></pre>'; ?>
         </div>
         <div class="ui bottom attached tab segment" data-tab="three">
             <button class="ui secondary button mini" id="copy-button" data-clipboard-target="#post-shortlink-three"><i class="large copy icon"></i></button>
-            <p id="post-shortlink-three">
-
-            </p>
+                <?php echo'<pre><code class="html" id="post-shortlink-three">'; highlight_file('./pages/codes_xml/code_requetes/******.php');  echo'</code></pre>'; ?>
         </div>
+
         <div class="ui bottom attached tab segment" data-tab="four">
             <button class="ui secondary button mini" id="copy-button" data-clipboard-target="#post-shortlink-four"><i class="large copy icon"></i></button>
             <p id="post-shortlink-four">

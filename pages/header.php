@@ -7,24 +7,18 @@
 <meta name="keywords" content="prosoluce, communication, multicanal, omnicanal, infrastructure, reseau, web, hebergement, developpement, integration, solutions, applications, mobile, marketing, telemarketing, ndd, nom de domaine"> 
 <meta name="generator" content="PROSOLUCE 2007-2017">
 
-
 <meta name="viewport" content="width=device-width">
 <!--<base href="http://www.prosoluce.fr/">-->
 <link rel="icon" type="image/png" href="https://www.prosoluce.fr/uploads/design/imgs/favicon.png">
 
-
-<script src="./js/jquery-3.2.1.min.js"></script>
-<script src="./js/semantic-2.2.10.min.js"></script>
 <link rel="stylesheet" type="text/css" href="./style/semantic.min.css">
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/components/icon.min.css">
 <link rel="stylesheet" type="text/css" href="./style/tomorrow.min.css">
-
-
 <link rel="stylesheet" type="text/css" href="./style/style.css">
 
+</head>
 
-
-</head><body cz-shortcut-listen="true">
+<body cz-shortcut-listen="true">
 <div id="haut-page" class="pousse-footer">
   <header class="ui fixed menu navbar">
    <a href=""><img id="logo" src="./assets/logo-prosoluce.png" alt="Logo PROSOLUCE"></a>
@@ -33,10 +27,10 @@
 
  <div class="ui vertical menu" id='navbarvertical'>
   <div class="ui left pointing dropdown link item"><i class="dropdown icon"></i>Envoi de messages<div class="menu">
-    <div class="item"><a href="/?compose_sms">Messages SMS vers des téléphones mobiles et fixes</a></div>
-    <div class="item"><a href="/?compose_voice">Campagnes d'appels téléphoniques (appels voix)</a></div>
-    <div class="item"><a href="/?compose_mail">Courriers électroniques (e-mails)</a></div>
-    <div class="item"><a href="/?compose_fax">Télécopies (FAX)</a></div>
+    <a class="item" href="/?compose_sms">Messages SMS vers des téléphones mobiles et fixes</a>
+    <a class="item" href="/?compose_voice">Campagnes d'appels téléphoniques (appels voix)</a>
+    <a class="item" href="/?compose_mail">Courriers électroniques (e-mails)</a>
+    <a class="item" href="/?compose_fax">Télécopies (FAX)</a>
   </div>
 </div>
 <div class="ui left pointing dropdown link item"><i class="dropdown icon"></i>Structure de groupes<div class="menu">

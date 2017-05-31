@@ -16,6 +16,10 @@
 		</div>
 		<div class="ui divider"></div>
 		<h4>Paramètres</h4>
+		<p><strong>*ID*</strong> devra être remplacé par l'identifiant du groupe d'envoi.</p>
+		<?php 
+		include ('pages/tables/table_descr_gest_grp_envoi.php');
+		?>
 
 	</div>
 	<div class="ui bottom attached tab segment" data-tab="two">

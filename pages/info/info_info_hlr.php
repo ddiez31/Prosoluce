@@ -9,13 +9,18 @@
             <a class="item" data-tab="four">Exemple d'intégration</a>
 	</div>
 	<div class="ui bottom attached active tab segment" data-tab="one">
+	<h3>Description des paramètres GET</h3>
+	<?php include ('pages/tables/table_parameters_get.php'); ?>
+	<h3>Informations retournées</h3>
+	<?php include ('pages/tables/table_info_return.php'); ?>
 		<h4>URL d’appel</h4>
 		<div class="ui list">
 			<div class="item">http://api.ecampaign.prosoluce.fr/numberInfo/HLRlookup</div>
 		</div>
 		<div class="ui divider"></div>
 		<h4>Paramètres</h4>
-
+		<p><strong>*ID*</strong> devra être remplacé par l’identifiant de la campagne.</p>
+		<?php include ('pages/tables/table_info_number_phone.php'); ?>
 	</div>
 	<div class="ui bottom attached tab segment" data-tab="two">
 		<p>test</p>

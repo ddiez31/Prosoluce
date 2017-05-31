@@ -10,12 +10,15 @@
             <a class="item" data-tab="four">Exemple d'intégration</a>
 	</div>
 	<div class="ui bottom attached active tab segment" data-tab="one">
+	<?php include ('pages/tables/table_obtain_responses.php'); ?>
 		<h4>URL d’appel</h4>
 		<div class="ui list">
 			<div class="item">http://api.ecampaign.prosoluce.fr/manageFeedback/*CANAL*/getResponses</div>
 		</div>
 		<div class="ui divider"></div>
 		<h4>Paramètres</h4>
+		<p><strong>*CAN*</strong> devra être remplacé par le canal choisi : « sms », « fax » ou « mail ».</p>
+		<?php include ('pages/tables/table_gest_answer_and_blacklist.php'); ?>
 
 	</div>
 	<div class="ui bottom attached tab segment" data-tab="two">

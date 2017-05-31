@@ -1,6 +1,6 @@
 
 
-    <div id="d_cont">
+<div id="d_cont">
     <div class="ui segment">
         <h2 class="ui left floated header">Envoyer une campagne</h2>
         <h3 class="ui orange right floated header">Télécopies fax (réponse synchrone)</h3>
@@ -18,7 +18,14 @@
             </div>
             <div class="ui divider"></div>
             <h4>Paramètres</h4>
-     
+            <?php include ('pages/tables/table_send_sms.php');?>
+            <h3>Description des paramètres</h3>
+            <p>Il s'agit de la description des paramètres présents au sein des requêtes XML d'envoi de messages qui vont être détaillées sur les pages suivantes.</p>
+            <?php 
+            include ('pages/tables/table_sms_default.php');
+            include ('pages/tables/table_sms_synchrone.php');
+            include ('pages/tables/table_sms_asynchrone.php');
+            ?>
         </div>
         <div class="ui bottom attached tab segment" data-tab="two">
             <p>test</p>
@@ -31,6 +38,6 @@
         </div>
     </div>
 
-    </div>
-    </div>
+</div>
+</div>
 

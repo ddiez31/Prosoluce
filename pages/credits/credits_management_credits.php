@@ -10,12 +10,14 @@
             <a class="item" data-tab="four">Exemple d'intégration</a>
 	</div>
 	<div class="ui bottom attached active tab segment" data-tab="one">
+	<?php include ('pages/tables/table_consult_cred_disp.php'); ?>
 		<h4>URL d’appel</h4>
 		<div class="ui list">
 			<div class="item">http://api.ecampaign.prosoluce.fr/tracking/getCDR</div>
 		</div>
 		<div class="ui divider"></div>
 		<h4>Paramètres</h4>
+		<?php include ('pages/tables/table_gest_cred.php'); ?>
 
 	</div>
 	<div class="ui bottom attached tab segment" data-tab="two">

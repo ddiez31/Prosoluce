@@ -25,14 +25,11 @@
         </div>
         <div class="ui bottom attached tab segment" data-tab="two">
             <button class="ui secondary button mini" id="copy-button" data-clipboard-target="#post-shortlink-two"><i class="large copy icon"></i></button>
-            <p id="post-shortlink-two">
-            </p>
+                <?php echo'<pre><code class="html" id="post-shortlink-two">'; highlight_file('./pages/codes_xml/code_requetes/req_mess_sms.php');  echo'</code></pre>'; ?>
         </div>
         <div class="ui bottom attached tab segment" data-tab="three">
             <button class="ui secondary button mini" id="copy-button" data-clipboard-target="#post-shortlink-three"><i class="large copy icon"></i></button>
-            <p id="post-shortlink-three">
-
-            </p>
+                <?php echo'<pre><code class="html" id="post-shortlink-three">'; highlight_file('./pages/codes_xml/code_reponses/******.php');  echo'</code></pre>'; ?>
              <h4>Réponse synchrone</h4>
             <?php include ('pages/tables/table_sms_synchrone.php'); ?>
             <h4>Réponse asynchrone</h4>
@@ -42,6 +39,7 @@
             <?php include ('pages/code_errors/codes_méthodes_send.php'); ?>
             <?php include ('pages/code_errors/code_etat_sms.php'); ?>
         </div>
+
         <div class="ui bottom attached tab segment" data-tab="four">
             <button class="ui secondary button mini" id="copy-button" data-clipboard-target="#post-shortlink-four"><i class="large copy icon"></i></button>
             <p id="post-shortlink-four">

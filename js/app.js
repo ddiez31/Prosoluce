@@ -14,7 +14,7 @@ $(document).ready(function() {
         $(".container").hide();
     };
 
-    // opntion copie code
+    // option copie code
     var clipboard = new Clipboard('#copy-button');
 
     clipboard.on('success', function(e) {
@@ -30,7 +30,7 @@ $(document).ready(function() {
         console.error('Action:', e.action);
     });
 
-
-
+    // highlight xml
+    hljs.initHighlightingOnLoad();
 
 });

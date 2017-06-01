@@ -155,3 +155,7 @@ body {
         width: 100%;
     }*/
 }
+
+.ui.table thead th {
+    background-color: #DCDCDC;
+}

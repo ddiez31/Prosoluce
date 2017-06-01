@@ -24,7 +24,7 @@
      <a href=""><img id="logo" src="./assets/logo-prosoluce.png" alt="Logo PROSOLUCE"></a>
      <div id="burger"></div>
    </header>
-
+   <h1 class="ui orange right floated header jl-margin-header">Documentation eCampaign</h1>
    <div class="ui vertical menu" id='navbarvertical'>
     <div class="ui left pointing dropdown link item"><i class="dropdown icon"></i>Envoi de messages<div class="menu">
       <a class="item" href="/?compose_sms">Messages SMS vers des téléphones mobiles et fixes</a>

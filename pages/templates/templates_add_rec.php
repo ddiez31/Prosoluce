@@ -10,8 +10,8 @@
 		<a class="item" data-tab="four">Exemple d'intégration</a>
 	</div>
 	<div class="ui bottom attached active tab segment" data-tab="one">
-	<p>Ajoute ou remplace un enregistrement au sein d'un modèle existant.</p>
-	<?php include ('pages/tables/table_register_model_voice.php') ?>
+		<p>Ajoute ou remplace un enregistrement au sein d'un modèle existant.</p>
+		<?php include ('pages/tables/table_register_model_voice.php') ?>
 		<h4>URL d’appel</h4>
 		<div class="ui list">
 			<div class="item">http://api.ecampaign.prosoluce.fr/manageTemplate/*ID_MODELE*/pushMP3</div>
@@ -22,24 +22,24 @@
 		<?php include ('pages/tables/table_gest_grp_model.php'); ?>
 
 	</div>
-          <div class="ui bottom attached tab segment" data-tab="two">
-            <button class="ui secondary button mini" id="copy-button" data-clipboard-target="#post-shortlink-two"><i class="large copy icon"></i></button>
-                <?php echo'<pre><code class="html" id="post-shortlink-two">'; highlight_file('./pages/codes_xml/code_requetes/******.php');  echo'</code></pre>'; ?>
-        </div>
-        <div class="ui bottom attached tab segment" data-tab="three">
-            <button class="ui secondary button mini" id="copy-button" data-clipboard-target="#post-shortlink-three"><i class="large copy icon"></i></button>
-                <?php echo'<pre><code class="html" id="post-shortlink-three">'; highlight_file('./pages/codes_xml/code_reponses/******.php');  echo'</code></pre>'; ?>
-
-            <h4>Codes communs</h4>
-            <?php include ('pages/code_errors/codes_communs.php'); ?>
-            <?php include ('pages/code_errors/codes_relat_gest_model.php'); ?>
+	<div class="ui bottom attached tab segment" data-tab="two">
+		<button class="ui secondary button mini" id="copy-button" data-clipboard-target="#post-shortlink-two"><i class="large copy icon"></i></button>
+		<?php echo'<pre><code class="html" id="post-shortlink-two">'; highlight_file('./pages/codes_xml/code_requetes/req_modele_add_enregis_voix.php');  echo'</code></pre>'; ?>
 	</div>
-        <div class="ui bottom attached tab segment" data-tab="four">
-            <button class="ui secondary button mini" id="copy-button" data-clipboard-target="#post-shortlink-four"><i class="large copy icon"></i></button>
-            <p id="post-shortlink-four">
-                <?php  ?>
-            </p>
-        </div>
+	<div class="ui bottom attached tab segment" data-tab="three">
+		<button class="ui secondary button mini" id="copy-button" data-clipboard-target="#post-shortlink-three"><i class="large copy icon"></i></button>
+		<?php echo'<pre><code class="html" id="post-shortlink-three">'; highlight_file('./pages/codes_xml/code_reponses/resp_modele_add_enregis_voix.php');  echo'</code></pre>'; ?>
+
+		<h4>Codes communs</h4>
+		<?php include ('pages/code_errors/codes_communs.php'); ?>
+		<?php include ('pages/code_errors/codes_relat_gest_model.php'); ?>
+	</div>
+	<div class="ui bottom attached tab segment" data-tab="four">
+		<button class="ui secondary button mini" id="copy-button" data-clipboard-target="#post-shortlink-four"><i class="large copy icon"></i></button>
+		<p id="post-shortlink-four">
+			<?php  ?>
+		</p>
+	</div>
 </div>
 
 </div>

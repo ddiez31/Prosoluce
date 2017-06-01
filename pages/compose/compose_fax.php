@@ -27,7 +27,7 @@
         </div>
         <div class="ui bottom attached tab segment" data-tab="three">
             <button class="ui secondary button mini" id="copy-button" data-clipboard-target="#post-shortlink-three"><i class="large copy icon"></i></button>
-            <?php echo'<pre><code class="html" id="post-shortlink-three">'; highlight_file('./pages/codes_xml/code_reponses/******.php');  echo'</code></pre>'; ?>
+            <?php echo'<pre><code class="html" id="post-shortlink-three">'; highlight_file('./pages/codes_xml/code_reponses/resp_mess_fax.php');  echo'</code></pre>'; ?>
             <h4>Réponse synchrone</h4>
             <?php include ('pages/tables/table_sms_synchrone.php'); ?>
             <h4>Réponse asynchrone</h4>

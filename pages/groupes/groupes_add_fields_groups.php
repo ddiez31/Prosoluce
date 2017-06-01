@@ -21,7 +21,7 @@
 		<?php 
 		include ('pages/tables/table_descr_gest_grp_envoi.php');
 		?>
-        
+        </div>
         <div class="ui bottom attached tab segment" data-tab="two">
             <button class="ui secondary button mini" id="copy-button" data-clipboard-target="#post-shortlink-two"><i class="large copy icon"></i></button>
                 <?php echo'<pre><code class="html" id="post-shortlink-two">'; highlight_file('./pages/codes_xml/code_requetes/******.php');  echo'</code></pre>'; ?>

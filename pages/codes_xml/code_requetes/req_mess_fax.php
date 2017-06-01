@@ -1,4 +1,6 @@
 
+
+
 <?xml version="1.0"?>
 <ecampaign>
 	<login>
@@ -6,13 +8,11 @@
 		<password>MOT_DE_PASSE</password>
 		<md5>MD5</md5>
 	</login>
-	<sendSMS>
+	<sendFAX>
 		<route>IDENT_ROUTE</route>
-		<senderID>EXPEDITEUR_SMS</senderID>
-		<callerID>NUMERO_APPELANT</callerID>
-		<templateID>IDENT_TEMPLATE</templateID>
-		<message>MESSAGE</message>
+		<filename>FICHIER</filename>
 		<sendDate>DATE_ENVOI</sendDate>
+		<callerID>NUMERO_APPELANT</callerID>
 		<recipients>
 			<groupID>IDENT_GROUPE</groupID>
 			<groupFields>
@@ -41,18 +41,7 @@
 				<number>NUMERO</number>
 			</phone>
 		</recipients>
-	</sendSMS>
+	</sendFAX>
 </ecampaign>
-
-
-
-
-
-
-
-
-
-
-
 
 

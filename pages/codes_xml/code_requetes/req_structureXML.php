@@ -1,5 +1,4 @@
 
-<?php
 
 <?xml version="1.0"?>
 <groupMembers>
@@ -24,5 +23,5 @@
 	</groupMembers>
 	<!-- nécessaire si CHAMP1 est de type téléphone -->
 	<!-- nécessaire si CHAMP1 est de type téléphone -->
-	?>
+	
 

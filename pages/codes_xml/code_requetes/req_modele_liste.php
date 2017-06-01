@@ -1,7 +1,7 @@
 
-<?php
 
-<?xml version="1.0"?
+
+<?xml version="1.0"?>
 >
 <ecampaign>
 	<login>
@@ -15,5 +15,5 @@
 		</listTemplates>
 	</manageTemplate>
 </ecampaign>
-?>
+
 

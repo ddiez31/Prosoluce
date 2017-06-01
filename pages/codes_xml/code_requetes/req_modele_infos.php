@@ -1,5 +1,5 @@
 
-<?php
+
 
 <?xml version="1.0"? >
 <ecampaign>
@@ -11,5 +11,5 @@
 	<manageTemplate>
 	</manageTemplate>
 </ecampaign>
-?>
+
 

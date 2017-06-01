@@ -19,26 +19,26 @@
 </head>
 
 <body cz-shortcut-listen="true">
-<div id="haut-page" class="pousse-footer">
-  <header class="ui fixed menu navbar">
-   <a href=""><img id="logo" src="./assets/logo-prosoluce.png" alt="Logo PROSOLUCE"></a>
-   <div id="burger"></div>
- </header>
+  <div id="haut-page" class="pousse-footer">
+    <header class="ui fixed menu navbar">
+     <a href=""><img id="logo" src="./assets/logo-prosoluce.png" alt="Logo PROSOLUCE"></a>
+     <div id="burger"></div>
+   </header>
 
- <div class="ui vertical menu" id='navbarvertical'>
-  <div class="ui left pointing dropdown link item"><i class="dropdown icon"></i>Envoi de messages<div class="menu">
-    <a class="item" href="/?compose_sms">Messages SMS vers des téléphones mobiles et fixes</a>
-    <a class="item" href="/?compose_voice">Campagnes d'appels téléphoniques (appels voix)</a>
-    <a class="item" href="/?compose_mail">Courriers électroniques (e-mails)</a>
-    <a class="item" href="/?compose_fax">Télécopies (FAX)</a>
+   <div class="ui vertical menu" id='navbarvertical'>
+    <div class="ui left pointing dropdown link item"><i class="dropdown icon"></i>Envoi de messages<div class="menu">
+      <a class="item" href="/?compose_sms">Messages SMS vers des téléphones mobiles et fixes</a>
+      <a class="item" href="/?compose_voice">Campagnes d'appels téléphoniques (appels voix)</a>
+      <a class="item" href="/?compose_mail">Courriers électroniques (e-mails)</a>
+      <a class="item" href="/?compose_fax">Télécopies (FAX)</a>
+    </div>
   </div>
-</div>
-<div class="ui left pointing dropdown link item"><i class="dropdown icon"></i>Structure de groupes<div class="menu">
-  <a class="item" href="/?groupes_search_user">Recherche de membres</a>
-  <a class="item" href="/?groupes_add_user">Ajout d'un membre</a>
-  <a class="item" href="/?groupes_change_user">Modification d'un membre</a>
-  <a class="item" href="/?groupes_delete_user">Suppression d'un membre</a>
-</div>
+  <div class="ui left pointing dropdown link item"><i class="dropdown icon"></i>Structure de groupes<div class="menu">
+    <a class="item" href="/?groupes_search_user">Recherche de membres</a>
+    <a class="item" href="/?groupes_add_user">Ajout d'un membre</a>
+    <a class="item" href="/?groupes_change_user">Modification d'un membre</a>
+    <a class="item" href="/?groupes_delete_user">Suppression d'un membre</a>
+  </div>
 </div>
 <div class="ui left pointing dropdown link item"><i class="dropdown icon"></i>Contenu de groupes<div class="menu">
   <a class="item" href="/?groupes_list_groups">Liste des groupes existants</a>
@@ -83,4 +83,3 @@
 </div>
 
 <div class="container">
-  

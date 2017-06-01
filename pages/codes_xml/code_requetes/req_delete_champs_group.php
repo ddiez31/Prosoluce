@@ -1,4 +1,7 @@
+
+
 <?xml version="1.0"?>
+
 <ecampaign>
 	<login>
 		<user>UTILISATEUR</user>

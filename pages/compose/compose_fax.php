@@ -28,6 +28,7 @@
         <div class="ui bottom attached tab segment" data-tab="two">
             <button class="ui secondary button mini" id="copy-button" data-clipboard-target="#post-shortlink-two"><i class="large copy icon"></i></button>
             <p id="post-shortlink-two">
+                <?php highlight_file('./pages/codes_xml/code_requetes/req_mess_fax.php') ?>
                 
             </p>
         </div>

@@ -1,5 +1,5 @@
 
-<?php
+
 
 <?xml version="1.0"? >
 <ecampaign>
@@ -16,5 +16,4 @@
 		</delTags>
 	</manageGroup>
 </ecampaign>
-?>
 

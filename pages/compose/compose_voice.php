@@ -1,7 +1,7 @@
 <div id="d_cont">
     <div class="ui segment">
         <h2 class="ui left floated header">Envoyer une campagne</h2>
-        <h3 class="ui orange right floated header">Appels téléphoniques voix (réponse synchrone)</h3>
+        <h3 class="ui orange right floated header">Appels téléphoniques voix</h3>
         <div class="ui clearing divider"></div>
         <div class="ui top attached tabular menu" id="tabnavigation">
             <a class="item active" data-tab="one">Description</a>
@@ -25,12 +25,12 @@
         </div>
         <div class="ui bottom attached tab segment" data-tab="two">
             <button class="ui secondary button mini" id="copy-button" data-clipboard-target="#post-shortlink-two"><i class="large copy icon"></i></button>
-                <?php echo'<pre><code class="html" id="post-shortlink-two">'; highlight_file('./pages/codes_xml/code_requetes/req_mess_voice.php');  echo'</code></pre>'; ?>
+            <?php echo'<pre><code class="html" id="post-shortlink-two">'; highlight_file('./pages/codes_xml/code_requetes/req_mess_voice.php');  echo'</code></pre>'; ?>
         </div>
         <div class="ui bottom attached tab segment" data-tab="three">
             <button class="ui secondary button mini" id="copy-button" data-clipboard-target="#post-shortlink-three"><i class="large copy icon"></i></button>
-                <?php echo'<pre><code class="html" id="post-shortlink-three">'; highlight_file('./pages/codes_xml/code_reponses/******.php');  echo'</code></pre>'; ?>
-             <h4>Réponse synchrone</h4>
+            <?php echo'<pre><code class="html" id="post-shortlink-three">'; highlight_file('./pages/codes_xml/code_reponses/******.php');  echo'</code></pre>'; ?>
+            <h4>Réponse synchrone</h4>
             <?php include ('pages/tables/table_sms_synchrone.php'); ?>
             <h4>Réponse asynchrone</h4>
             <?php include ('pages/tables/table_sms_asynchrone.php');?>

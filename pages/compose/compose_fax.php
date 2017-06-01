@@ -1,7 +1,7 @@
 <div id="d_cont">
     <div class="ui segment">
         <h2 class="ui left floated header">Envoyer une campagne</h2>
-        <h3 class="ui orange right floated header">Télécopies fax (réponse synchrone)</h3>
+        <h3 class="ui orange right floated header">Télécopies fax</h3>
         <div class="ui clearing divider"></div>
         <div class="ui top attached tabular menu" id="tabnavigation">
             <a class="item active" data-tab="one">Description</a>

@@ -82,4 +82,10 @@ getPart('footer');
 // $testFax->sendFAX(10, array(array('+33', '0561989052')), $file);
 
 
+
+include ('classes/ecampaign_class_recherche_membre.php');
+// $search_Member = new ecampaign('dm-simplon', 'SimplonERN');
+// $search_Member->searchMember('8192');
+
+
 ?>

@@ -33,4 +33,18 @@ $(document).ready(function() {
     // highlight xml
     hljs.initHighlightingOnLoad();
 
+
+    $('#navbar').parent().css('overflow', 'hidden');
+    $('#navbar').offset({ top: -100 })
+    $('#navbar').animate({ 'top': '+=60px', opacity: 1 }, function() {
+
+
+    });
+
+    $('#navbarvertical').parent().css('overflow', 'hidden');
+    $('#navbarvertical').offset({ left: -350 })
+    $('#navbarvertical').animate({ 'left': '+=180px', opacity: 1 }, function() {
+
+    });
+
 });

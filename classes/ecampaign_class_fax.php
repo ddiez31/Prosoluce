@@ -36,9 +36,9 @@ class ecampaign{
 	public function sendFAX($route, $recipients, $filename, $callerid=null, $send_date=null, $group_id=null, $group_fields=null, $group_filter=false, $group_filter_global_op=null, $group_filter_criterias=null){
 		$req  = "<sendFAX>\n";
 		$req .= "<route>{$route}</route>\n";
+		$req .= "<filename>{$filename}</filename>\n";
 		if($callerid !== null)			$req .= "<callerID>{$callerid}</callerID>\n";
 		if($send_date !== null)			$req .= "<sendDate>{$send_date}</sendDate>\n";
-		$req .= "<filename>{$filename}</filename>\n";
 		$req .= $this->Gen_recip_XML('phone', $recipients, $group_id, $group_fields, $group_filter, $group_filter_global_op, $group_filter_criterias);
 		$req .= "</sendFAX>";
 

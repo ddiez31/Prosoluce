@@ -1,9 +1,12 @@
+.jl-margin-header.jl-margin-header.jl-margin-header{
+    margin-top: 1em;
+}
 h1 {
     display: none;
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 25px;
     color: #464646;
     text-align: left;
 }
@@ -29,7 +32,7 @@ h3.second {
 h4 {
     margin-top: 0.938em;
     margin-bottom: 0.063em;
-    font-size: 0.875em;
+    font-size: 1.2em;
     color: #2e6e9e;
 }
 
@@ -110,52 +113,58 @@ a:hover#footersoluce {
     display: block;
     }*/
 
-.site-footer,
-.page-wrap:after {
-    height: -11.30em;
-}
+    .site-footer,
+    .page-wrap:after {
+        height: -11.30em;
+    }
 
-.container {
-    height: 70%;
-    width: 78%;
-    margin-top: 15vh;
-    margin-right: 1vw;
-    margin-left: 20%;
-    position: fixed;
-    z-index: 1;
-    background-color: white;
-    opacity: 0.9;
-    overflow: auto;
-}
-
-.ui.menu .ui.dropdown .menu>.item {
-    background-image: linear-gradient(#152f64, #003399) !important;
-    color: white !important;
-}
-
-body {
-    background-image: url(../assets/fond2.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-@media (max-width: 360px) {
     .container {
         height: 70%;
         width: 78%;
-        margin-top: 70vh;
+        margin-top: 15vh;
         margin-right: 1vw;
         margin-left: 20%;
+        position: fixed;
+        z-index: 1;
+        background-color: white;
+        opacity: 0.9;
+        overflow: auto;
     }
+
+    .ui.menu .ui.dropdown .menu>.item {
+        background-image: linear-gradient(#152f64, #003399) !important;
+        color: white !important;
+    }
+
+    body {
+        background-image: url(../assets/fond2.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .ui.list>.item{
+        font-size: 15px;
+    }
+    p{
+        font-size: 1.1em;
+    }
+
+    @media (max-width: 360px) {
+        .container {
+            height: 70%;
+            width: 78%;
+            margin-top: 70vh;
+            margin-right: 1vw;
+            margin-left: 20%;
+        }
     /*footer {
         display: flex;
         flex-wrap: wrap;
         margin: 1.25em 0 0 0;
         bottom: 0;
         width: 100%;
-    }*/
-}
+        }*/
+    }
 
-.ui.table thead th {
-    background-color: #DCDCDC;
-}
+    .ui.table thead th {
+        background-color: #DCDCDC;
+    }

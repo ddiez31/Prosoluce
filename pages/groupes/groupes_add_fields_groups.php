@@ -1,9 +1,8 @@
-
-
 <div id="d_cont">
-	<h2>Groupes d'envoi</h2>
-	<h3>Ajouter des champs dans un groupe</h3>
-	<div class="ui top attached tabular menu" id="tabnavigation">
+  <div class="ui segment">
+   <h2 class="ui left floated header">Groupes d'envoi</h2>
+   <h3 class="ui orange right floated header">Ajouter des champs dans un groupe</h3>
+   <div class="ui top attached tabular menu" id="tabnavigation">
     <a class="item active" data-tab="one">Description</a>
     <a class="item" data-tab="two">Requêtes</a>
     <a class="item" data-tab="three">Réponses</a>
@@ -24,6 +23,7 @@
  </div>
  <div class="ui bottom attached tab segment" data-tab="two">
   <button class="ui secondary button mini" id="copy-button" data-clipboard-target="#post-shortlink-two"><i class="large copy icon"></i></button>
+
   <?php echo'<pre><code class="html" id="post-shortlink-two">'; highlight_file('./pages/codes_xml/code_requetes/req_ajout_champs_group.php');  echo'</code></pre>'; ?>
 </div>
 <div class="ui bottom attached tab segment" data-tab="three">
@@ -39,8 +39,9 @@
   <p id="post-shortlink-four">
     <?php  ?>
   </p>
-</div>
-</div>
 
+</div>
+</div>
+</div>
 </div>
 </div>

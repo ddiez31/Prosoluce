@@ -82,4 +82,10 @@ getPart('footer');
 // $testFax->sendFAX(10, array(array('+33', '0561989052')), $file);
 
 
+// echo'<div class="container">';
+// include ('classes/ecampaign_class_add_group.php');
+// $testAddGroup = new ecampaign('dm-simplon', 'SimplonERN');
+// $testAddGroup->addGroup('newgroupe', array('NOM' => 'nom', "TEL" => 'tel'));
+
+
 ?>

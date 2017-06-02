@@ -1,9 +1,8 @@
-
-
 <div id="d_cont">
-	<h2>Méthode pour la gestion des réponses et blacklists</h2>
-	<h3>Obtention de la liste des destinataires blacklistés</h3>
-	<div class="ui top attached tabular menu" id="tabnavigation">
+  <div class="ui segment">
+   <h2 class="ui left floated header">Méthode pour la gestion des réponses et blacklists</h2>
+   <h3 class="ui orange right floated header">Obtention de la liste des destinataires blacklistés</h3>
+   <div class="ui top attached tabular menu" id="tabnavigation">
     <a class="item active" data-tab="one">Description</a>
     <a class="item" data-tab="two">Requêtes</a>
     <a class="item" data-tab="three">Réponses</a>
@@ -19,7 +18,6 @@
    <h4>Paramètres</h4>
    <p><strong>*CAN*</strong> devra être remplacé par le canal choisi : « sms », « fax » ou « mail ».</p>
    <?php include ('pages/tables/table_gest_answer_and_blacklist.php'); ?>
-
 
  </div>
  <div class="ui bottom attached tab segment" data-tab="two">
@@ -39,7 +37,16 @@
     <?php  ?>
   </p>
 </div>
+<h4>Codes communs</h4>
+<?php include ('pages/code_errors/codes_communs.php'); ?>
 </div>
-
+<div class="ui bottom attached tab segment" data-tab="four">
+  <button class="ui secondary button mini" id="copy-button" data-clipboard-target="#post-shortlink-four"><i class="large copy icon"></i></button>
+  <p id="post-shortlink-four">
+    <?php  ?>
+  </p>
+</div>
+</div>
+</div>
 </div>
 </div>

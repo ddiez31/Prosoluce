@@ -1,6 +1,8 @@
 	</div>
+		</div>
+			</div>
 	
-	
+	<div class="ui grid fixed footer">
 	<footer id="footer">
 	<div id="box-footer">
 		<a href="https://www.prosoluce.fr/mentions-legales.html">Mentions légales&nbsp; - &nbsp;</a>
@@ -9,6 +11,7 @@
 	</div>
 
 </footer>
+</div>
 
 </body>
 

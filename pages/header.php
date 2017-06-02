@@ -20,11 +20,12 @@
 
 <body cz-shortcut-listen="true">
   <div id="haut-page" class="pousse-footer">
-    <header class="ui fixed menu navbar">
-     <a href=""><img id="logo" src="./assets/logo-prosoluce.png" alt="Logo PROSOLUCE"></a>
-     <div id="burger"></div>
+    <header class="ui grid fixed menu navbar">
+      <a href="" class="left floated five wide column"><img id="logo" src="./assets/logo-prosoluce.png" alt="Logo PROSOLUCE"></a>
+      <h1 class="right floated five wide column">Documentation <span>eCampaign</span></h1>
    </header>
-   <h1 class="ui orange right floated header jl-margin-header">Documentation eCampaign</h1>
+   <div class="ui grid">
+     <div class="four wide column">
    <div class="ui vertical menu" id='navbarvertical'>
     <div class="ui left pointing dropdown link item"><i class="dropdown icon"></i>Envoi de messages<div class="menu">
       <a class="item" href="/?compose_sms">Messages SMS vers des téléphones mobiles et fixes</a>
@@ -81,5 +82,6 @@
 </div>
 </div>
 </div>
-
+</div>
+<div class="twelve wide column">
 <div class="container">

@@ -1,8 +1,19 @@
-.jl-margin-header.jl-margin-header.jl-margin-header{
-    margin-top: 1em;
+.ui.grid {
+    display: flex;
+    justify-content: space-between;
+    color: #fab224;
 }
+
+.ui.list {
+    color: black;
+}
+
 h1 {
-    display: none;
+    margin-top: 0.5em;
+}
+
+h1>span {
+    color: #247FE6;
 }
 
 h2 {
@@ -48,9 +59,10 @@ h5 {
 
 #navbarvertical {
     margin-top: 7em;
-    position: fixed;
-    z-index: 2;
+    position: relative;
+    z-index: 3;
     border: 1px solid #FAB224;
+    width: 100% !important;
 }
 
 .ui.left.pointing.dropdown.link.item {
@@ -113,49 +125,68 @@ a:hover#footersoluce {
     display: block;
     }*/
 
-    .site-footer,
-    .page-wrap:after {
-        height: -11.30em;
-    }
+.site-footer,
+.page-wrap:after {
+    height: -11.30em;
+}
 
+.container {
+    height: 70%;
+    width: 70%;
+    margin-top: 7em;
+    margin-right: 1vw;
+    position: fixed;
+    z-index: 2;
+    background-color: white;
+    opacity: 0.9;
+    overflow: auto;
+}
+
+.ui.menu .ui.dropdown .menu>.item {
+    background-image: linear-gradient(#152f64, #003399) !important;
+    color: white !important;
+}
+
+.ui.menu .ui.dropdown .menu {
+    border: 1px solid #FAB224;
+}
+
+body {
+    background-image: url(../assets/fond2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 1365px;
+}
+
+.twelve.wide.column {
+    padding-left: 0 !important;
+}
+
+.ui.list>.item {
+    font-size: 15px;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+@media (max-width: 360px) {
     .container {
         height: 70%;
-        width: 78%;
+        width: 70%;
         margin-top: 15vh;
         margin-right: 1vw;
         margin-left: 20%;
-        position: fixed;
-        z-index: 1;
-        background-color: white;
-        opacity: 0.9;
-        overflow: auto;
     }
-
-    .ui.menu .ui.dropdown .menu>.item {
-        background-image: linear-gradient(#152f64, #003399) !important;
-        color: white !important;
+    .left.floated.five.wide.column>img {
+        width: 150px !important;
     }
-
-    body {
-        background-image: url(../assets/fond2.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%;
+    h1 {
+        display: none !important;
     }
-    .ui.list>.item{
-        font-size: 15px;
+    .ui.dropdown .menu>* {
+        white-space: normal !important;
     }
-    p{
-        font-size: 1.1em;
-    }
-
-    @media (max-width: 360px) {
-        .container {
-            height: 70%;
-            width: 78%;
-            margin-top: 70vh;
-            margin-right: 1vw;
-            margin-left: 20%;
-        }
     /*footer {
         display: flex;
         flex-wrap: wrap;
@@ -163,8 +194,20 @@ a:hover#footersoluce {
         bottom: 0;
         width: 100%;
         }*/
-    }
+}
 
-    .ui.table thead th {
-        background-color: #DCDCDC;
+@media (min-width: 360px) and (max-width: 768px) {
+    .left.floated.five.wide.column>img {
+        width: 250px !important;
     }
+    h1 {
+        display: none !important;
+    }
+    .ui.dropdown .menu>* {
+        white-space: normal !important;
+    }
+}
+
+.ui.table thead th {
+    background-color: #DCDCDC;
+}

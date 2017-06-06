@@ -1,7 +1,9 @@
 	</div>
-		</div>
-			</div>
+	</div>
+	</div>
 	
+	
+
 	<div class="ui grid fixed footer">
 	<footer id="footer">
 	<div id="box-footer">

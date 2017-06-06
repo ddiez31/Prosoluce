@@ -65,3 +65,5 @@
 			<td>59</td>
 			<td>Page miroir cliquée</td>
 		</tr>
+		</tbody>
+</table>

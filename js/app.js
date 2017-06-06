@@ -1,6 +1,23 @@
 $(document).ready(function() {
-    // navigation des onglets
+    // navigation/animation des onglets
     $('#tabnavigation .item').tab();
+    $('.ui.top.attached.tabular.menu a.item').click(function() {
+        var toLoad = $(this).attr('data-tab') + '.tab.segment.active';
+        $('.tab.segment.active').hide('fast', loadContent);
+
+        function loadContent() {
+            $('.tab.segment.active').load(toLoad, showNewContent());
+        }
+
+        function showNewContent() {
+            $('.tab.segment.active').show('normal', hideLoader());
+        }
+
+        function hideLoader() {
+            $('.tab.segment.active').fadeOut('normal');
+        }
+        return false;
+    });
 
     // animation menu
     $('.ui.dropdown').dropdown();
@@ -23,7 +40,6 @@ $(document).ready(function() {
 
     // option copie code
     var clipboard = new Clipboard('#copy-button');
-
     clipboard.on('success', function(e) {
         console.info('Action:', e.action);
         e.clearSelection();

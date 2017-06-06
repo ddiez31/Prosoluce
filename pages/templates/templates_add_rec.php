@@ -1,7 +1,7 @@
 <div id="d_cont">
 
 	<div class="ui segment">
-		<h2 class="ui left floated header">modèles</h2>
+		<h2 class="ui left floated header">Modèles</h2>
 		<h3 class="ui orange right floated header">Ajoute un enregistrement au sein d'un modèle "voix"</h3>
 		<div class="ui top attached tabular menu" id="tabnavigation">
 			<a class="item active" data-tab="one">Description</a>

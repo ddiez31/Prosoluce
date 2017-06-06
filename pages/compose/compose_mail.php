@@ -19,9 +19,7 @@
             <?php include ('pages/tables/table_send_sms.php');?>
             <h4>Description des paramètres</h4>
             <p>Il s'agit de la description des paramètres présents au sein des requêtes XML d'envoi de messages qui vont être détaillées sur les pages suivantes.</p>
-            <?php 
-            include ('pages/tables/table_sms_default.php');
-            ?>
+            <?php include ('pages/tables/table_sms_default.php'); ?>
         </div>
         <div class="ui bottom attached tab segment" data-tab="two">
             <button class="ui secondary button mini" id="copy-button" data-clipboard-target="#post-shortlink-two"><i class="large copy icon"></i></button>
@@ -29,9 +27,7 @@
         </div>
         <div class="ui bottom attached tab segment" data-tab="three">
             <button class="ui secondary button mini" id="copy-button" data-clipboard-target="#post-shortlink-three"><i class="large copy icon"></i></button>
-
             <?php echo'<pre><code class="html" id="post-shortlink-three">'; highlight_file('./pages/codes_xml/code_reponses/resp_mess_mail.php');  echo'</code></pre>'; ?>
-
             <h4>Réponse synchrone</h4>
             <?php include ('pages/tables/table_sms_synchrone.php');?>
             <h4>Réponse asynchrone</h4>
@@ -51,4 +47,3 @@
 
 </div>
 </div>
-

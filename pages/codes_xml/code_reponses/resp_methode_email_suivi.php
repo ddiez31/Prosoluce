@@ -24,3 +24,4 @@
 		</event>
 		...
 	</getMailEvents>
+</ecampaign>

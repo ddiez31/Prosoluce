@@ -18,7 +18,7 @@
 			<value>VALEUR</value>
 		</CHAMP2>
 		/member>
-	</groupMembers>
+</groupMembers>
 	<!-- nécessaire si CHAMP1 est de type téléphone -->
 	<!-- nécessaire si CHAMP1 est de type téléphone -->
 	

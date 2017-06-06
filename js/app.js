@@ -10,11 +10,11 @@ $(document).ready(function() {
         }
 
         function showNewContent() {
-            $('.tab.segment.active').show('normal', hideLoader());
+            $('.tab.segment.active').show('slow', hideLoader());
         }
 
         function hideLoader() {
-            $('.tab.segment.active').fadeOut('normal');
+            $('.tab.segment.active').fadeOut('fast');
         }
         return false;
     });

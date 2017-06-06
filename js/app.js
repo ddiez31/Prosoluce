@@ -11,6 +11,13 @@ $(document).ready(function() {
             $(".container").fadeIn();
         });
     } else {
+        $('#navbar').parent().css('overflow', 'hidden');
+        $('#navbar').offset({ top: -100 });
+        $('#navbar').animate({ 'top': '+=100px', opacity: 1 }, { duration: 1500 });
+
+        $('a.item').parent().css('overflow', 'hidden');
+        $('#navbarvertical').offset({ left: -350 });
+        $('#navbarvertical').animate({ 'left': '+=360px', opacity: 1 }, { duration: 1500 });
         $(".container").hide();
     };
 
@@ -34,17 +41,5 @@ $(document).ready(function() {
     hljs.initHighlightingOnLoad();
 
 
-    $('#navbar').parent().css('overflow', 'hidden');
-    $('#navbar').offset({ top: -100 })
-    $('#navbar').animate({ 'top': '+=100px', opacity: 1 }, function() {
-
-
-    });
-
-    $('#navbarvertical').parent().css('overflow', 'hidden');
-    $('#navbarvertical').offset({ left: -350 })
-    $('#navbarvertical').animate({ 'left': '+=360px', opacity: 1 }, function() {
-
-    });
 
 });

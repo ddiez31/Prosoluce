@@ -76,15 +76,7 @@ function getPart($name) {
 	}
 }
 
-function home() {
-	echo 'function home ok';
-}
 
-function admin() {
-	echo 'function admin ok';
-}
-
- 
 
 
 ?>

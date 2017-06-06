@@ -83,9 +83,17 @@ getPart('footer');
 
 
 
-include ('classes/ecampaign_class_recherche_membre.php');
+
+// include ('classes/ecampaign_class_recherche_membre.php');
 // $search_Member = new ecampaign('dm-simplon', 'SimplonERN');
 // $search_Member->searchMember('8192');
+
+
+
+// echo'<div class="container">';
+// include ('classes/ecampaign_class_add_group.php');
+// $testAddGroup = new ecampaign('dm-simplon', 'SimplonERN');
+// $testAddGroup->addGroup('newgroupe', array('NOM' => 'nom', "TEL" => 'tel'));
 
 
 ?>

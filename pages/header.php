@@ -78,7 +78,7 @@
   <a class="item" href="/?feedback_get_answers">Obtention des réponses</a>
 </div>    
 </div>
-<div class="ui left pointing dropdown link item"><i class="dropdown icon"></i>Suivi des renvois<div class="menu">
+<div class="ui left pointing dropdown link item"><i class="dropdown icon"></i>Suivi des envois<div class="menu">
   <a class="item" href="/?tracking_get">Récupération de la liste des messages envoyés avec suivi</a>
   <a class="item" href="/?tracking_recovery_mail">Email : récupération du suivi des actions</a>
 </div>

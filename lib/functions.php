@@ -65,6 +65,8 @@ function getContent() {
 		include __DIR__.'/../pages/tracking/tracking_recovery_mail.php';
 	} if(isset($_GET['info_info_hlr'])) {
 		include __DIR__.'/../pages/info/info_info_hlr.php';
+	} if(isset($_GET['plan'])) {
+		include __DIR__.'/../pages/plan.php';
 	}
 }
 

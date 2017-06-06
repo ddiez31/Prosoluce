@@ -33,18 +33,18 @@
             <?php echo'<pre><code class="html" id="post-shortlink-three">'; highlight_file('./pages/codes_xml/code_reponses/resp_mess_mail.php');  echo'</code></pre>'; ?>
 
             <h4>Réponse synchrone</h4>
-            <?php include ('pages/tables/table_sms_synchrone.php'); ?>
+            <?php include ('pages/tables/table_sms_synchrone.php');?>
             <h4>Réponse asynchrone</h4>
             <?php include ('pages/tables/table_sms_asynchrone.php');?>
             <h4>Codes communs</h4>
-            <?php include ('pages/code_errors/codes_communs.php'); ?>
-            <?php include ('pages/code_errors/codes_méthodes_send.php'); ?>
-            <?php include ('pages/code_errors/codes_etat_mail.php'); ?>
+            <?php include ('pages/code_errors/codes_communs.php');?>
+            <?php include ('pages/code_errors/codes_methodes_send.php');?>
+            <?php include ('pages/code_errors/codes_etat_mail.php');?>
         </div>
         <div class="ui bottom attached tab segment" data-tab="four">
             <button class="ui secondary button mini" id="copy-button" data-clipboard-target="#post-shortlink-four"><i class="large copy icon"></i></button>
             <p id="post-shortlink-four">
-                <?php highlight_file('./classes/ecampaign_class_mail.php') ?>
+                <?php highlight_file('./classes/ecampaign_class_mail.php')?>
             </p>
         </div>
     </div>

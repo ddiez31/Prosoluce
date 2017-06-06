@@ -179,6 +179,16 @@
         overflow-y: hidden;
     }
     
+    #plan {
+        padding-top: 1.5em !important;
+        padding-left: 3em !important;
+        padding-bottom: 1.5em ! important;
+    }
+    
+    #plan a:hover {
+        color: #FAB224;
+    }
+    
     @media (max-width: 360px) {
         .container {
             height: 70%;

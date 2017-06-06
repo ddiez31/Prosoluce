@@ -7,7 +7,7 @@
 	<div class="ui grid fixed footer">
 	<footer id="footer">
 	<div id="box-footer">
-		<a href="https://www.prosoluce.fr/mentions-legales.html">Mentions légales&nbsp; - &nbsp;</a>
+		<a href="/?plan">Plan du site&nbsp; - &nbsp;</a>
 		<a id="footersoluce" href="https://www.prosoluce.fr/mentions-legales.html">PROSOLUCE 2007/2017&nbsp; </a>
 		<a href="https://www.prosoluce.fr/contacter-prosoluce.html">- &nbsp;Contact</a>
 	</div>

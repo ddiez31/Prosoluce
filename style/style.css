@@ -58,7 +58,7 @@
     }
     
     #navbarvertical {
-        margin-top: 7em;
+        margin-top: 6em;
         position: relative;
         z-index: 3;
         border: 1px solid #FAB224;
@@ -161,6 +161,7 @@
     }
     
     .twelve.wide.column {
+        padding-top: 0 !important;
         padding-left: 0 !important;
         position: fixed;
         z-index: 1;
@@ -172,6 +173,10 @@
     
     p {
         font-size: 1.1em;
+    }
+    
+    html {
+        overflow-y: hidden;
     }
     
     @media (max-width: 360px) {

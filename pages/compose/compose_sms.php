@@ -38,7 +38,7 @@
             <?php include ('pages/tables/table_sms_asynchrone.php');?>
             <h4>Codes communs</h4>
             <?php include ('pages/code_errors/codes_communs.php'); ?>
-            <?php include ('pages/code_errors/codes_méthodes_send.php'); ?>
+            <?php include ('pages/code_errors/codes_methodes_send.php'); ?>
             <?php include ('pages/code_errors/code_etat_sms.php'); ?>
         </div>
 

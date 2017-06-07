@@ -48,7 +48,6 @@
         </tr>
         <tr>
             <td>16</td>
-            <td>Appels</td>
             <td>Message écouté</td>
         </tr>
         <tr>

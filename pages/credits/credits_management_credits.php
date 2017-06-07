@@ -38,19 +38,7 @@
                 <?php  ?>
             </p>
         </div>
-
-
-        <h4>Codes communs</h4>
-        <?php include ('pages/code_errors/codes_communs.php'); ?>
-        <?php include ('pages/code_errors/codes_relat_gest_cred.php'); ?>
     </div>
-    <div class="ui bottom attached tab segment" data-tab="four">
-        <button class="ui secondary button mini" id="copy-button" data-clipboard-target="#post-shortlink-four"><i class="large copy icon"></i></button>
-        <p id="post-shortlink-four">
-            <?php  ?>
-        </p>
-    </div>
-</div>
 </div>
 </div>
 </div>

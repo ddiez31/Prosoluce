@@ -23,7 +23,7 @@ $(document).ready(function() {
     $('.ui.accordion').accordion();
 
     // gestion affichage container
-    if ($(location).attr('href') !== "http://") {
+    if ($(location).attr('href') !== "https://prosoluce-ecampaign.herokuapp.com/") {
         $(".ui.menu.ui.dropdown.menu>.item").click(function() {
             $(".container").fadeIn();
         });

@@ -1,11 +1,7 @@
 <?php
 
 function getContent() {
-	if(isset($_GET['index'])) {
-		include __DIR__.'/../pages/menu.php';
-	} if(empty($_GET)) {
-		include __DIR__.'/../pages/menu.php';
-	} if(isset($_GET['compose_sms'])) {
+	if(isset($_GET['compose_sms'])) {
 		include __DIR__.'/../pages/compose/compose_sms.php';
 	} if(isset($_GET['compose_fax'])) {
 		include __DIR__.'/../pages/compose/compose_fax.php';

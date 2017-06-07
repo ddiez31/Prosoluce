@@ -20,7 +20,7 @@ $(document).ready(function() {
     });
 
     // animation menu
-    $('.ui.dropdown').dropdown();
+    $('.ui.accordion').accordion();
 
     // gestion affichage container
     if ($(location).attr('href') !== "http://localhost:8000/") {

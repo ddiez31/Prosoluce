@@ -23,7 +23,7 @@ $(document).ready(function() {
     $('.ui.accordion').accordion();
 
     // gestion affichage container
-    if ($(location).attr('href') !== "http://localhost:8000/") {
+    if ($(location).attr('href') !== "http://") {
         $(".ui.menu.ui.dropdown.menu>.item").click(function() {
             $(".container").fadeIn();
         });
